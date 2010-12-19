@@ -49,5 +49,12 @@ gem 'refinerycms-i18n',         '~> 0.9'
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
+gem 'haml-rails'
+gem 'rails3-generators'
+gem 'compass'
+
+group :development do
+  gem 'heroku_san'
+end
 
 # END USER DEFINED

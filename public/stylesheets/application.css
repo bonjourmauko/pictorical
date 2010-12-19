@@ -1,5 +1,412 @@
-@import url('refinery/application.css');
-/*  
-  Override default refinery application CSS below. 
-  Formatting applies to all frontend.
-*/
+@font-face {
+  font-family: Museo;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Museo300-Regular.otf");
+}
+
+@font-face {
+  font-family: Museo;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Museo500-Regular.otf");
+}
+
+@font-face {
+  font-family: Museo;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Museo700-Regular.otf");
+}
+
+@font-face {
+  font-family: MuseoSlab;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Museo_Slab_500.otf");
+}
+
+@font-face {
+  font-family: MuseoSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans_500.otf");
+}
+
+/* line 31, ../../app/stylesheets/application.sass */
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 36, ../../app/stylesheets/application.sass */
+h1.thin {
+  font-weight: 300;
+}
+
+/* line 39, ../../app/stylesheets/application.sass */
+body {
+  background: #eaeaea;
+  width: 960px;
+  margin: 10px auto;
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* line 46, ../../app/stylesheets/application.sass */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #1d4f99;
+}
+/* line 49, ../../app/stylesheets/application.sass */
+a:hover {
+  text-decoration: underline;
+}
+/* line 51, ../../app/stylesheets/application.sass */
+a:active {
+  position: relative;
+  top: 1px;
+}
+/* line 54, ../../app/stylesheets/application.sass */
+a.underline {
+  text-decoration: underline;
+}
+
+/* line 57, ../../app/stylesheets/application.sass */
+.page {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+
+/* line 64, ../../app/stylesheets/application.sass */
+#header a {
+  text-decoration: none;
+  color: black;
+}
+/* line 67, ../../app/stylesheets/application.sass */
+#header a:link, #header a:visited, #header a:active {
+  text-decoration: none;
+  color: black;
+}
+/* line 70, ../../app/stylesheets/application.sass */
+#header .undertitle {
+  margin-bottom: 20px;
+}
+/* line 72, ../../app/stylesheets/application.sass */
+#header h1 {
+  font: 24px MuseoSlab, Georgia, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 78, ../../app/stylesheets/application.sass */
+#header h2 {
+  font: 60px Georgia, sans-serif;
+  text-align: center;
+  margin: 50px 0 60px 0;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 83, ../../app/stylesheets/application.sass */
+#header h3 {
+  font: 20px Museo, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 5px;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 89, ../../app/stylesheets/application.sass */
+#header .top {
+  margin-bottom: 10px;
+}
+/* line 91, ../../app/stylesheets/application.sass */
+#header .title {
+  margin: 40px 0;
+}
+/* line 93, ../../app/stylesheets/application.sass */
+#header img.ipad {
+  float: right;
+}
+/* line 95, ../../app/stylesheets/application.sass */
+#header .navbar {
+  text-align: right;
+  font: 16px Museo, sans-serif;
+  text-shadow: white 0px 1px 0px;
+}
+
+/* line 100, ../../app/stylesheets/application.sass */
+h2 {
+  font: 60px Georgia, sans-serif;
+  text-align: center;
+  margin: 50px 0 60px 0;
+  text-shadow: white 0px 1px 0px;
+}
+
+/* line 106, ../../app/stylesheets/application.sass */
+#footer {
+  width: 100%;
+  margin-top: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+/* line 113, ../../app/stylesheets/application.sass */
+td.left {
+  width: 300px;
+}
+/* line 115, ../../app/stylesheets/application.sass */
+td.right {
+  width: 600px;
+}
+
+/* line 118, ../../app/stylesheets/application.sass */
+#sheet {
+  background: white;
+  width: 660px;
+  min-height: 500px;
+  padding: 30px 0px;
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 126, ../../app/stylesheets/application.sass */
+#sheet .inner {
+  padding: 0 30px;
+}
+/* line 128, ../../app/stylesheets/application.sass */
+#sheet .book {
+  width: 180px;
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+/* line 133, ../../app/stylesheets/application.sass */
+#sheet .book .artists, #sheet .book .cover {
+  width: 180px;
+  height: 291px;
+}
+/* line 136, ../../app/stylesheets/application.sass */
+#sheet .artists {
+  background-color: #eeeeee;
+  background-image: url("../images/empty.png");
+}
+/* line 139, ../../app/stylesheets/application.sass */
+#sheet .artists .inner {
+  padding: 15px;
+}
+/* line 141, ../../app/stylesheets/application.sass */
+#sheet .artists h2 {
+  font: 28px Museo, "Trebuchet MS", Verdana, sans-serif;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+/* line 147, ../../app/stylesheets/application.sass */
+#sheet .book .cover {
+  overflow: hidden;
+}
+/* line 149, ../../app/stylesheets/application.sass */
+#sheet .book .info {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 160%;
+}
+/* line 153, ../../app/stylesheets/application.sass */
+#sheet .ipad {
+  background-image: url("../images/ipad-vertical-empty.png");
+  width: 660px;
+  height: 844px;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 159, ../../app/stylesheets/application.sass */
+#sheet .ipad .screen img {
+  width: 514px;
+  height: 685px;
+}
+/* line 162, ../../app/stylesheets/application.sass */
+#sheet .buy {
+  font: 20px Museo, sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 169, ../../app/stylesheets/application.sass */
+#sheet .buy img {
+  margin: 0;
+}
+/* line 171, ../../app/stylesheets/application.sass */
+#sheet .buy .search {
+  height: 43px;
+  background-image: url("../images/ibooks-search-2.png");
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  text-shadow: none;
+}
+/* line 178, ../../app/stylesheets/application.sass */
+#sheet .buy .search .search-text {
+  font: 14px Helvetica, Arial, sans-serif;
+  position: relative;
+  top: -16px;
+}
+/* line 182, ../../app/stylesheets/application.sass */
+#sheet .ipad .screen {
+  width: 514px;
+  height: 684px;
+  position: absolute;
+  left: 73px;
+  top: 80px;
+}
+
+/* line 189, ../../app/stylesheets/application.sass */
+#bar {
+  width: 280px;
+  margin-right: 20px;
+}
+/* line 192, ../../app/stylesheets/application.sass */
+#bar .ipad {
+  margin-bottom: 10px;
+}
+/* line 194, ../../app/stylesheets/application.sass */
+#bar .balloon, #bar .links a {
+  padding: 10px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+/* line 200, ../../app/stylesheets/application.sass */
+#bar .face {
+  padding: 0;
+  height: 373px;
+  overflow: hidden;
+}
+/* line 204, ../../app/stylesheets/application.sass */
+#bar .cover {
+  padding: 0;
+  height: 452px;
+  overflow: hidden;
+}
+/* line 208, ../../app/stylesheets/application.sass */
+#bar .tail {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  overflow: hidden;
+}
+/* line 213, ../../app/stylesheets/application.sass */
+#bar .blue {
+  background: #95cbe9;
+}
+
+/* line 216, ../../app/stylesheets/application.sass */
+.c0 {
+  background: #95cbe9;
+}
+
+/* line 219, ../../app/stylesheets/application.sass */
+#bar .green, .c1 {
+  background: #afd775;
+}
+
+/* line 222, ../../app/stylesheets/application.sass */
+#bar .pink, .c2 {
+  background: #de9d7f;
+}
+
+/* line 225, ../../app/stylesheets/application.sass */
+#bar .yellow, .c3 {
+  background: #efd279;
+}
+
+/* line 229, ../../app/stylesheets/application.sass */
+#bar .white {
+  background: white;
+}
+/* line 231, ../../app/stylesheets/application.sass */
+#bar .dark {
+  background: #333333;
+  color: white;
+}
+/* line 234, ../../app/stylesheets/application.sass */
+#bar .darkred {
+  background: #820012;
+  color: white;
+}
+/* line 237, ../../app/stylesheets/application.sass */
+#bar .dark a, #bar .darkred a {
+  color: white;
+}
+/* line 239, ../../app/stylesheets/application.sass */
+#bar h1, #bar h2, #bar h3 {
+  font: 16px Museo, sans-serif;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+/* line 245, ../../app/stylesheets/application.sass */
+#bar h1.thin {
+  font: 16px Museo, sans-serif;
+  font-weight: 300;
+}
+/* line 248, ../../app/stylesheets/application.sass */
+#bar h2 {
+  font-size: 14px;
+}
+/* line 250, ../../app/stylesheets/application.sass */
+#bar h3 {
+  font: 14px MuseoSans, sans-serif;
+}
+/* line 252, ../../app/stylesheets/application.sass */
+#bar .item {
+  margin-bottom: 30px;
+}
+/* line 254, ../../app/stylesheets/application.sass */
+#bar h1 img {
+  width: 106px;
+}
+/* line 256, ../../app/stylesheets/application.sass */
+#bar .facebook-like {
+  margin-top: 20px;
+}
+/* line 258, ../../app/stylesheets/application.sass */
+#bar .facebookbox {
+  width: 258px;
+  height: 253px;
+  overflow: hidden;
+}
+/* line 262, ../../app/stylesheets/application.sass */
+#bar .facebookbox iframe {
+  margin: -1px;
+}
+/* line 264, ../../app/stylesheets/application.sass */
+#bar .links a {
+  margin-bottom: 10px;
+  display: block;
+  font: 18px Museo, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+/* line 272, ../../app/stylesheets/application.sass */
+#bar .links a:visited {
+  color: black;
+  text-decoration: none;
+}
+/* line 275, ../../app/stylesheets/application.sass */
+#bar .links a:hover {
+  background: #555555;
+  color: white;
+}
+/* line 278, ../../app/stylesheets/application.sass */
+#bar .links a:active {
+  background: white;
+  color: black;
+}
