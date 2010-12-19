@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="artists">
+    <% @artists.each do |artist| %>
+      <li>
+        <%= link_to artist.first_name, artist_url(artist) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

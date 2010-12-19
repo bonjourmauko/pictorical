@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    artists:
+      title: Artists
+  admin:
+    artists:
+      index:
+        create_new: Create a new Artist
+        reorder: Reorder Artists
+        reorder_done: Done Reordering Artists
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Artists yet. Click "Create a new Artist" to add your first artist.
+      artist:
+        view_live: View this artist live <br/><em>(opens in a new window)</em>
+        edit: Edit this artist
+        delete: Remove this artist forever
+  artists:
+    show:
+      other: Other Artists

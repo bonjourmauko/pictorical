@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    writers:
+      title: Writers
+  admin:
+    writers:
+      index:
+        create_new: Lag en ny Writer
+        reorder: Endre rekkefølgen på Writers
+        reorder_done: Ferdig å endre rekkefølgen Writers
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Writers enda. Klikk på "Lag en ny Writer" for å legge til din første writer.
+      writer:
+        view_live: Vis hvordan denne writer ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne writer
+        delete: Fjern denne writer permanent
+  writers:
+    show:
+      other: Andre Writers

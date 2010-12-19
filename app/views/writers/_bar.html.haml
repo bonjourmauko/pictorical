@@ -1,0 +1,20 @@
+.item
+  .balloon.face{:style => "background: url('#{@writer.photo280.url}');"}
+    \&nbsp;
+  - if not @writer.bio.empty?
+    .tail.yellow= image_tag("tail-top.png")
+    .balloon.yellow
+      = @writer.bio.html_safe
+.item
+  .balloon.white
+    %p{:style => "margin-top: 0; margin-bottom: 10px;"}
+      Do you like	#{@writer.last_name}'s stories?
+    = "#{facebooklike url_for @writer}".html_safe
+-# if not @writer.links.empty?
+  -#.item.links
+    -#%h2
+      -#Learn more about #{@writer.last_name} in:
+    -# counter = 0
+    -# for link in @writer.links
+      -# link_to link['name'], link['url'], :class => colorcircle(counter)
+      -# counter = counter + 1

@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    writers:
+      title: Writers
+  admin:
+    writers:
+      index:
+        create_new: Create a new Writer
+        reorder: Reorder Writers
+        reorder_done: Done Reordering Writers
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Writers yet. Click "Create a new Writer" to add your first writer.
+      writer:
+        view_live: View this writer live <br/><em>(opens in a new window)</em>
+        edit: Edit this writer
+        delete: Remove this writer forever
+  writers:
+    show:
+      other: Other Writers
