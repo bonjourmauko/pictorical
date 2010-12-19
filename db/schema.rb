@@ -10,7 +10,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100929035252) do
+ActiveRecord::Schema.define(:version => 20101219182401) do
+
+  create_table "artists", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.text     "bio"
+    t.text     "links"
+    t.integer  "photo280_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "artists", ["id"], :name => "index_artists_on_id"
+
+  create_table "galleries", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "galleries", ["id"], :name => "index_galleries_on_id"
+
+  create_table "gallery_entries", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.integer  "gallery_id"
+    t.integer  "entry_type", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gallery_entries", ["id"], :name => "index_gallery_entries_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -134,6 +170,20 @@ ActiveRecord::Schema.define(:version => 20100929035252) do
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
+  create_table "stories", :force => true do |t|
+    t.string   "title"
+    t.integer  "artist_id"
+    t.integer  "writer_id"
+    t.integer  "cover180_id"
+    t.integer  "cover280_id"
+    t.integer  "gallery_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "stories", ["id"], :name => "index_stories_on_id"
+
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
     t.string  "name"
@@ -155,5 +205,18 @@ ActiveRecord::Schema.define(:version => 20100929035252) do
   end
 
   add_index "users", ["id"], :name => "index_users_on_id"
+
+  create_table "writers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.text     "bio"
+    t.text     "links"
+    t.integer  "photo280_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "writers", ["id"], :name => "index_writers_on_id"
 
 end

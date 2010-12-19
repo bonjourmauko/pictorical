@@ -1,13 +1,13 @@
 <% theme ||= false -%>
 <head>
-  <title><%= browser_title(yield(:title)) %></title>
+  <title><%= render :partial => 'title' %></title>
   <%-# TODO: Fix Favicon %>
   <link rel="shortcut icon" href="/favicon.ico" />
   <meta charset='<%= Refinery::Application.config.encoding %>' />
   <%= csrf_meta_tag %>
   <%= render(:partial => '/shared/html5_for_ie.js').html_safe if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
-  <%= render :partial => '/shared/og_meta' %>
+  <%= render :partial => 'og_meta' %>
   <%= stylesheet_link_tag "application" %>
   <%-# stylesheet_link_tag "application", "formatting", :theme => theme %>
   <%-# stylesheet_link_tag "theme" %>

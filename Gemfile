@@ -52,9 +52,15 @@ gem 'refinerycms-i18n',         '~> 0.9'
 gem 'haml-rails'
 gem 'rails3-generators'
 gem 'compass'
+gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
 
 group :development do
   gem 'heroku_san'
 end
 
 # END USER DEFINED
+
+gem 'refinerycms-artists', '1.0', :path => 'vendor/engines', :require => 'artists'
+gem 'refinerycms-writers', '1.0', :path => 'vendor/engines', :require => 'writers'
+gem 'refinerycms-stories', '1.0', :path => 'vendor/engines', :require => 'stories'
+#gem 'refinerycms-story_screenshots', '1.0', :path => 'vendor/engines', :require => 'story_screenshots'
