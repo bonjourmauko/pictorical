@@ -50,6 +50,7 @@ gem 'refinerycms-i18n',         '~> 0.9'
 
 # USER DEFINED
 gem 'haml-rails'
+gem 'jquery-rails'
 gem 'rails3-generators'
 gem 'compass'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
