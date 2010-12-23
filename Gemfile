@@ -67,3 +67,4 @@ gem 'refinerycms-artists', '1.0', :path => 'vendor/engines', :require => 'artist
 gem 'refinerycms-writers', '1.0', :path => 'vendor/engines', :require => 'writers'
 gem 'refinerycms-stories', '1.0', :path => 'vendor/engines', :require => 'stories'
 #gem 'refinerycms-story_screenshots', '1.0', :path => 'vendor/engines', :require => 'story_screenshots'
+gem 'refinerycms-books', '1.0', :path => 'vendor/engines', :require => 'books'

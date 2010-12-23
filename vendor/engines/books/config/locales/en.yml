@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    books:
+      title: Books
+  admin:
+    books:
+      index:
+        create_new: Create a new Book
+        reorder: Reorder Books
+        reorder_done: Done Reordering Books
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Books yet. Click "Create a new Book" to add your first book.
+      book:
+        view_live: View this book live <br/><em>(opens in a new window)</em>
+        edit: Edit this book
+        delete: Remove this book forever
+  books:
+    show:
+      other: Other Books

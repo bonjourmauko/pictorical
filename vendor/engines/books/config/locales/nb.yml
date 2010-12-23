@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    books:
+      title: Books
+  admin:
+    books:
+      index:
+        create_new: Lag en ny Book
+        reorder: Endre rekkefølgen på Books
+        reorder_done: Ferdig å endre rekkefølgen Books
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Books enda. Klikk på "Lag en ny Book" for å legge til din første book.
+      book:
+        view_live: Vis hvordan denne book ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne book
+        delete: Fjern denne book permanent
+  books:
+    show:
+      other: Andre Books
