@@ -3,11 +3,11 @@ class WritersController < ApplicationController
   before_filter :find_all_writers
   before_filter :find_page
 
-  def index
+#  def index
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @writer in the line below:
-    present(@page)
-  end
+#    present(@page)
+#  end
 
   def show
     @writer = Writer.find(params[:id])

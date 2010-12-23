@@ -3,19 +3,19 @@ class StoriesController < ApplicationController
   before_filter :find_all_stories
   before_filter :find_page
 
-  def index
+#  def index
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @story in the line below:
-    present(@page)
-  end
+#    present(@page)
+#  end
 
-  def show
-    @story = Story.find(params[:id])
+#  def show
+#    @story = Story.find(params[:id])
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @story in the line below:
-    present(@page)
-  end
+#    present(@page)
+#  end
 
 protected
 
