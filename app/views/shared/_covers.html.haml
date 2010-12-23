@@ -1,12 +1,10 @@
 .book
-  .cover
-    = link_to image_tag(@story.cover180.url), @story
-  .info
-    = link_to @story.title, @story
-    %br/
-    - if @story.writer
-      by #{link_to @story.writer.fullname, @story.writer}
-      %br/
-    illustrated by #{link_to @story.artist.fullname, @story.artist}
-    %br/
-    = "#{facebooklike( url_for(@story) ,'margin-top: 3px' )}".html_safe
+  .cover= link_to image_tag @book.cover_180.url, @book
+  .title= link_to @book.title, @book
+  .writer
+    by
+    = link_to @book.writer.fullname, @book.writer
+  .artist
+    illustrated by
+    = link_to @book.artist.fullname, @book.artist
+  .fblike= facebooklike(url_for @book, 'margin-top: 3px').html_safe

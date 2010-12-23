@@ -1,8 +1,7 @@
-= t('.copyright').html_safe
-= Time.now.year
-\Pictorical Ltd · Pictorical is a trademark of Pictorical Ltd ·
-= link_to "Copyright", "#"
-\·
-= link_to "Privacy Policy", "#"
-\·
-= link_to "Terms and Conditions", "#"
+&copy; 2010 Pictorical, Inc. · Pictorical is a trademark of Pictorical, Inc. ·
+= link_to "Copyright", "#" #- TO DO
+·
+= link_to "Privacy Policy", "#" #- TO DO
+·
+= link_to "Terms and Conditions", "#" #- TO DO
+= render '/shared/google_analytics' unless local_request?

@@ -4,7 +4,7 @@ Refinery::Application.routes.draw do
 
   filter(:refinery_locales) if defined?(RoutingFilter::RefineryLocales) # optionally use i18n.
 
-  root :to => 'pages#home'
+  root :to => 'books#home'
   
   # connect ':controller/:action/:id'
   # connect ':controller/:action/:id.:format'

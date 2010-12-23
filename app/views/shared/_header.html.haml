@@ -1,10 +1,8 @@
-%table.top{:border => "0", :width => "100%"}
-  %tr
-    %td{:valign => "top"}
-      %h1= link_to RefinerySetting.get(:site_name), root_url(:only_path => true)
-      %td.navbar{:valign => "middle"}
-        = link_to "Answers", "#"
-        ·
-        =link_to "Contact", "#"
-        &nbsp;
-        = facebooklike('/','margin-right: -61px').html_safe
+#logo
+  %h1= link_to image_tag "logo-small.png" #, root_url(:only_path => true)
+  #nav
+    = link_to "Answers", "#" #- TODO: Answers page
+    ·
+    = link_to "Contact", "#" #- TODO: Contact page
+    &nbsp;
+    = facebooklike('/','margin-right: -61px').html_safe

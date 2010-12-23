@@ -1,12 +1,10 @@
 !!! Strict
 %html{:lang => "en", "xmlns:fb" => "http://www.facebook.com/2008/fbml", "xmlns:og" => "http://opengraphprotocol.org/schema/"}
-  -# site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true})
-  = render :partial => "/shared/head"
+  %head= render "/shared/head"
   %body
-    =# site_bar
-    = render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/
-    #header
-      = render :partial => "/shared/header"
-    = yield
-    #footer
-      = render :partial => "/shared/footer"
+    #wrap
+      #header= render "/shared/header"
+      = yield :love
+      = yield :sidebar
+      = yield :main
+      #footer= render "/shared/footer"

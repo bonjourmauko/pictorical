@@ -3,8 +3,8 @@ class Artist < ActiveRecord::Base
   acts_as_indexed :fields => [:first_name, :last_name, :bio, :links]
   
   has_many :stories
+  belongs_to :photo180, :class_name => 'Image'
   belongs_to :photo280, :class_name => 'Image'
-  
   validates :first_name, :presence => true
   validates :last_name, :presence => true
     

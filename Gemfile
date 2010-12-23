@@ -54,7 +54,7 @@ gem 'compass'
 gem 'jquery-rails'
 gem 'rails3-generators'
 gem 'twitter'
-gem 'koala'
+#gem 'koala', :git => 'git://github.com/maukoquiroga/koala.git'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
 
 group :development do
