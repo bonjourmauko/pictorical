@@ -1,0 +1,10 @@
+!!! Strict
+%html{:lang => "en", "xmlns:fb" => "http://www.facebook.com/2008/fbml", "xmlns:og" => "http://opengraphprotocol.org/schema/"}
+  %head= render "/shared/head"
+  %body
+    #wrap
+      #header= render "/shared/header"
+      #title= yield :love
+      #sidebar= yield :sidebar
+      #main= yield :main
+      #footer= render "/shared/footer"

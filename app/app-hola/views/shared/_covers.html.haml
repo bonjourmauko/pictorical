@@ -1,0 +1,10 @@
+.book
+  .cover= link_to image_tag @book.cover180.url, @book
+  .title= link_to @book.title, @book
+  .writer
+    by
+    = link_to @book.writer.fullname, @book.writer
+  .artist
+    illustrated by
+    = link_to @book.artist.fullname, @book.artist
+  .fblike= facebooklike( url_for @book, 'margin-top: 3px' ).html_safe

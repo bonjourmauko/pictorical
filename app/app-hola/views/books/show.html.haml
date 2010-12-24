@@ -3,7 +3,7 @@
 	in Pictorical, illustrated stories and books
 
 - content_for :meta_description do
-  - !@book.writer.last_name = "Nobody" ? @has_writer =  "by #{@book.writer}" : @has_writer = ""
+  - !@book.writer.nil? ? @has_writer =  "by #{@book.writer}" : @has_writer = ""
   %meta{:content => "'#{@book.title}'#{@has_writer}, illustrated by #{@book.artist}. Pictorical publishes the world's greatest stories illustrated by the new generation of artists.", :name => "description"}  
 
 - content_for :opengraph do
