@@ -18,7 +18,7 @@ class Book < ActiveRecord::Base
   
   #will_paginate
   cattr_reader :per_page
-  @@per_page = 2
+  @@per_page = 30
   
   
 #  def artist

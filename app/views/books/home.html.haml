@@ -65,5 +65,5 @@
 
 - content_for :main do
   - for @book in @books
-    = render "shared/covers" #- We will have to do a pagination, but not yet
+    = render "shared/covers"
   = will_paginate @books
