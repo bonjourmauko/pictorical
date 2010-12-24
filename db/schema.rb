@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101223161805) do
+ActiveRecord::Schema.define(:version => 20101224022750) do
 
   create_table "artists", :force => true do |t|
     t.string   "first_name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20101223161805) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "photo180_id"
   end
 
   add_index "artists", ["id"], :name => "index_artists_on_id"
@@ -39,7 +40,6 @@ ActiveRecord::Schema.define(:version => 20101223161805) do
 
   create_table "galleries", :force => true do |t|
     t.string   "name"
-    t.text     "body"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(:version => 20101223161805) do
 
   create_table "gallery_entries", :force => true do |t|
     t.string   "name"
-    t.text     "body"
     t.integer  "image_id"
     t.integer  "position"
     t.integer  "gallery_id"
@@ -229,6 +228,7 @@ ActiveRecord::Schema.define(:version => 20101223161805) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "photo180_id"
   end
 
   add_index "writers", ["id"], :name => "index_writers_on_id"

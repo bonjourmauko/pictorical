@@ -1,242 +1,182 @@
-/* line 1, ../../app/stylesheets/application.sass */
-body, html {
-  background: #eaeaea;
-  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+body,html {
+background: #eaeaea;
+font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
 }
-
-/* line 5, ../../app/stylesheets/application.sass */
 #wrap {
-  width: 960px;
-  margin: 0 auto;
+width: 960px;
+margin: 0 auto;
 }
-
-/* line 9, ../../app/stylesheets/application.sass */
 #header {
-  height: 30px;
-  padding-top: 10px;
+height: 30px;
+padding-top: 10px;
 }
-/* line 12, ../../app/stylesheets/application.sass */
 #header h1 {
-  font: 24px "Georgia", "Trebuchet MS", Verdana, sans-serif;
+font: 24px "Georgia","Trebuchet MS",Verdana,sans-serif;
 }
-
-/* line 15, ../../app/stylesheets/application.sass */
 #main {
-  float: right;
-  width: 660px;
-  background: white;
+float: right;
+width: 660px;
+background: white;
 }
-/* line 19, ../../app/stylesheets/application.sass */
 #main .inner {
-  padding-top: 30px;
+padding-top: 30px;
 }
-
-/* line 22, ../../app/stylesheets/application.sass */
 #sidebar {
-  float: left;
-  width: 280px;
-  margin-right: 20px;
+float: left;
+width: 280px;
+margin-right: 20px;
 }
-
-/* line 27, ../../app/stylesheets/application.sass */
 #footer {
-  clear: both;
+clear: both;
 }
-
-/* line 30, ../../app/stylesheets/application.sass */
 #title {
-  margin: 50px auto;
-  text-align: center;
+margin: 50px auto;
+text-align: center;
 }
-/* line 33, ../../app/stylesheets/application.sass */
 #title h1 {
-  font: normal normal normal 60px/normal Georgia, sans-serif;
-  text-shadow: white 0px 1px 0px;
+font: normal normal normal 60px/normal Georgia,sans-serif;
+text-shadow: white 0px 1px 0px;
 }
-/* line 36, ../../app/stylesheets/application.sass */
 #title strong {
-  font-weight: normal;
-  color: #990015;
+font-weight: normal;
+color: #990015;
 }
-
-/* line 41, ../../app/stylesheets/application.sass */
 #sidebar .item {
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
-/* line 43, ../../app/stylesheets/application.sass */
 #sidebar .balloon {
-  padding: 15px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  font: normal normal normal 14px/150% "Century Gothic", "Lucida Grande", Arial, sans-serif;
+padding: 15px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+font: normal normal normal 14px/150% "Century Gothic","Lucida Grande",Arial,sans-serif;
 }
-/* line 49, ../../app/stylesheets/application.sass */
 #sidebar .balloon h2 {
-  font-size: 160%;
-  margin-bottom: 15px;
+font-size: 160%;
+margin-bottom: 15px;
 }
-/* line 52, ../../app/stylesheets/application.sass */
 #sidebar .tail {
-  height: 30px;
-  width: 280px;
-  overflow: hidden;
+height: 30px;
+width: 280px;
+overflow: hidden;
 }
-/* line 56, ../../app/stylesheets/application.sass */
 #sidebar .blue {
-  background: #95cbe9;
+background: #95cbe9;
 }
-
-/* line 59, ../../app/stylesheets/application.sass */
 .c0 {
-  background: #95cbe9;
+background: #95cbe9;
 }
-
-/* line 62, ../../app/stylesheets/application.sass */
-#sidebar .green, .c1 {
-  background: #afd775;
+#sidebar .green,.c1 {
+background: #afd775;
 }
-
-/* line 65, ../../app/stylesheets/application.sass */
-#sidebar .pink, .c2 {
-  background: #de9d7f;
+#sidebar .pink,.c2 {
+background: #de9d7f;
 }
-
-/* line 68, ../../app/stylesheets/application.sass */
-#sidebar .yellow, .c3 {
-  background: #efd279;
+#sidebar .yellow,.c3 {
+background: #efd279;
 }
-
-/* line 72, ../../app/stylesheets/application.sass */
 #sidebar .white {
-  background: white;
+background: white;
 }
-/* line 74, ../../app/stylesheets/application.sass */
 #sidebar .dark {
-  background: #333333;
-  color: white;
+background: #333333;
+color: white;
 }
-/* line 77, ../../app/stylesheets/application.sass */
 #sidebar .darkred {
-  background: #820012;
-  color: white;
+background: #820012;
+color: white;
 }
-/* line 80, ../../app/stylesheets/application.sass */
 #sidebar .dark a {
-  color: white;
+color: white;
 }
-
-/* line 83, ../../app/stylesheets/application.sass */
 #bar .darkred a {
-  color: white;
+color: white;
 }
-
-/* line 86, ../../app/stylesheets/application.sass */
 .book {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  width: 180px;
-  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-  line-height: 150%;
-  display: inline-block;
+margin-left: 30px;
+margin-bottom: 30px;
+width: 180px;
+font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
+line-height: 150%;
+display: inline-block;
 }
-/* line 93, ../../app/stylesheets/application.sass */
 .book .cover {
-  width: 180px;
-  height: 291px;
-  margin-bottom: 5px;
+width: 180px;
+height: 291px;
+margin-bottom: 5px;
 }
-
-/* line 98, ../../app/stylesheets/application.sass */
 a {
-  color: #1d4f99;
-  text-decoration: none;
+color: #1d4f99;
+text-decoration: none;
 }
-/* line 101, ../../app/stylesheets/application.sass */
 a:visited {
-  color: #1d4f99;
-  text-decoration: none;
+color: #1d4f99;
+text-decoration: none;
 }
-/* line 104, ../../app/stylesheets/application.sass */
 a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
-/* line 106, ../../app/stylesheets/application.sass */
 a:active {
-  position: relative;
-  top: 1px;
+position: relative;
+top: 1px;
 }
-
-/* line 111, ../../app/stylesheets/application.sass */
 #header #logo {
-  float: left;
-  width: 100px;
+float: left;
+width: 100px;
 }
-/* line 114, ../../app/stylesheets/application.sass */
 #header #nav {
-  float: right;
-  width: 300px;
-  text-align: right;
-  font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+float: right;
+width: 300px;
+text-align: right;
+font: 16px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
 }
-
-/* line 120, ../../app/stylesheets/application.sass */
 #footer {
-  width: 100%;
-  color: #333333;
-  text-align: center;
+width: 100%;
+color: #333333;
+text-align: center;
 }
-/* line 124, ../../app/stylesheets/application.sass */
 #footer .inner {
-  padding: 20px 0px;
+padding: 20px 0px;
 }
-
-/* line 128, ../../app/stylesheets/application.sass */
 #sheet .ipad {
-  background-image: url("../images/ipad-vertical-empty.png");
-  width: 660px;
-  height: 844px;
-  position: relative;
-  margin-bottom: 30px;
+background-image: url("../images/ipad-vertical-empty.png");
+width: 660px;
+height: 844px;
+position: relative;
+margin-bottom: 30px;
 }
-/* line 134, ../../app/stylesheets/application.sass */
 #sheet .ipad .screen img {
-  width: 514px;
-  height: 685px;
+width: 514px;
+height: 685px;
 }
-/* line 137, ../../app/stylesheets/application.sass */
 #sheet .buy {
-  font: 20px Museo, sans-serif;
-  font-weight: normal;
-  line-height: 100%;
-  margin: 0;
-  margin-bottom: 20px;
-  text-shadow: white 0px 1px 0px;
+font: 20px Museo,sans-serif;
+font-weight: normal;
+line-height: 100%;
+margin: 0;
+margin-bottom: 20px;
+text-shadow: white 0px 1px 0px;
 }
-/* line 144, ../../app/stylesheets/application.sass */
 #sheet .buy img {
-  margin: 0;
+margin: 0;
 }
-/* line 146, ../../app/stylesheets/application.sass */
 #sheet .buy .search {
-  height: 43px;
-  background-image: url("../images/ibooks-search-2.png");
-  display: inline-block;
-  text-align: left;
-  overflow: hidden;
-  text-shadow: none;
+height: 43px;
+background-image: url("../images/ibooks-search-2.png");
+display: inline-block;
+text-align: left;
+overflow: hidden;
+text-shadow: none;
 }
-/* line 153, ../../app/stylesheets/application.sass */
 #sheet .buy .search .search-text {
-  font: 14px Helvetica, Arial, sans-serif;
-  position: relative;
-  top: -16px;
+font: 14px Helvetica,Arial,sans-serif;
+position: relative;
+top: -16px;
 }
-/* line 157, ../../app/stylesheets/application.sass */
 #sheet .ipad .screen {
-  width: 514px;
-  height: 684px;
-  position: absolute;
-  left: 73px;
-  top: 80px;
+width: 514px;
+height: 684px;
+position: absolute;
+left: 73px;
+top: 80px;
 }
