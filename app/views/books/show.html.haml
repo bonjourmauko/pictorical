@@ -22,7 +22,7 @@
     .balloon.white
       %h1
         = @book.title
-        - if @book.writer
+        - if !@book.writer.nil?
           %h2
             by
             = link_to @book.writer.fullname, @book.writer
