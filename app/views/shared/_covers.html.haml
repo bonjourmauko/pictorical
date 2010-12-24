@@ -1,10 +1,10 @@
 .book
   .cover= link_to ( image_tag @book.cover180.url ), @book
   .title= link_to @book.title, @book
-  - !@book.writer.nil? do |writer|
+  - if !@book.writer.nil?
     .writer
       by
-      = link_to writer.fullname, writer
+      = link_to @book.writer.fullname, @book.writer
   .artist
     illustrated by
     = link_to @book.artist.fullname, @book.artist
