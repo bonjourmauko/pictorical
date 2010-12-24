@@ -16,6 +16,11 @@ class Book < ActiveRecord::Base
   belongs_to :cover280, :class_name => 'Image'
   belongs_to :gallery
   
+  #will_paginate
+  cattr_reader :per_page
+  @@per_page = 2
+  
+  
 #  def artist
 #    self.artists.first
 #  end

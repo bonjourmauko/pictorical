@@ -64,5 +64,6 @@
     = link_to image_tag("Facebook.png", :width => '106'), "http://facebook.com/Pictorical"
 
 - content_for :main do
-  - for @book in @books do @book unless @books.nil?
+  - for @book in @books
     = render "shared/covers" #- We will have to do a pagination, but not yet
+  = will_paginate @books

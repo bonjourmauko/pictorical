@@ -20,7 +20,8 @@ class BooksController < ApplicationController
 protected
 
   def find_all_books
-    @books = Book.find(:all, :order => "position ASC")
+    @books = Book.paginate :page => params[:page], :order => 'created_at DESC'
+    
   end
 
   def find_page

@@ -35,5 +35,5 @@
         = facebooklike( url_for @writer ).html_safe
 
 - content_for :main do
-  - for @book in @writer.books do @book unless @writer.books.nil?
+  - for @book in @writer.books
     = render "shared/covers"

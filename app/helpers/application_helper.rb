@@ -22,5 +22,9 @@ module ApplicationHelper
   def full_url_for(x)
     'http://www.pictorical.com' + url_for(x)
   end
+  
+  def tokenizer(first_name, last_name)
+    Digest::MD5.hexdigest("#{first_name.split.first}#{last_name.split.first}".downcase!)
+  end
 
 end
