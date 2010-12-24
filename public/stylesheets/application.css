@@ -154,7 +154,12 @@ font: 16px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
 
 #header #nav a { color: #000; }
 
-#header #nav strong a { color: #C8001C; font-weight: normal;}
+#header #nav strong a, #header #nav strong a:visited { color: #C8001C; font-weight: normal;}
+#header #nav strong a:hover { background: #C8001C; color: white; text-decoration: none;}
+#header #nav strong a:active { background: black; color: white; text-decoration: none;}
+
+
+
 
 #footer {
 width: 100%;
@@ -229,3 +234,5 @@ a.twitter:link, a.twitter:hover, a.twitter:visited {color: #132835; text-decorat
 }
 
 img { border: 0;}
+
+.centered { text-align: center;}

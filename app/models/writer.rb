@@ -1,10 +1,16 @@
 class Writer < ActiveRecord::Base
 
-  has_many :stories
-  belongs_to :photo180, :class_name => 'Image'
-  belongs_to :photo280, :class_name => 'Image'
+  #validations
   validates :first_name, :presence => true
   validates :last_name, :presence => true
+  validates :bio, :presence => true
+  validates :photo180_id, :presence => true
+  validates :photo280_id, :presence => true
+  
+  #relationships
+  has_many :books
+  belongs_to :photo180, :class_name => 'Image'
+  belongs_to :photo280, :class_name => 'Image'
     
   def fullname
     "#{self.first_name} #{self.last_name}"

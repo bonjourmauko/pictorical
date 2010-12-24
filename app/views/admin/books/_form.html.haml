@@ -4,6 +4,12 @@
     = f.label :title
     = f.text_field :title
   .field
+    = f.label :artist_id
+    = f.collection_select :artist_id, Artist.all, :id, :fullname, { :prompt => "Select an artist" }
+  .field
+    = f.label :writer_id
+    = f.collection_select :writer_id, Writer.all, :id, :fullname, { :prompt => "Select a writer, if any" }
+  .field
     = f.label :cover180
     = render :partial => "/shared/admin/image_picker", :locals => { :f => f, :field => :cover180_id, :image => @book.cover180, :toggle_image_display => false }
   .field
