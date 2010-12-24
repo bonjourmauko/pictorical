@@ -1,157 +1,130 @@
-@import "partials/twitter"
+body, html
+  background: #EAEAEA
+  font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif
 
-@font-face
-  font-family: Museo
-  font-style: normal
-  font-weight: 300
-  src: url('../fonts/Museo300-Regular.otf')
-
-@font-face
-  font-family: Museo
-  font-style: normal
-  font-weight: normal
-  src: url('../fonts/Museo500-Regular.otf')
-
-@font-face
-  font-family: Museo
-  font-style: normal
-  font-weight: 700
-  src: url('../fonts/Museo700-Regular.otf')
-
-@font-face
-  font-family: MuseoSlab
-  font-style: normal
-  font-weight: normal
-  src: url('../fonts/Museo_Slab_500.otf')
-
-@font-face
-  font-family: MuseoSans
-  font-style: normal
-  font-weight: normal
-  src: url('../fonts/MuseoSans_500.otf')
-
-h1, h2, h3, h4
-  margin: 0
-  font-weight: normal
-  font-style: normal
-
-h1.thin
-  font-weight: 300
-
-body
-  background: #eaeaea
+#wrap
   width: 960px
-  margin: 10px auto
-  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif
+  margin: 0 auto
+
+#header
+  height: 30px
+  padding-top: 10px
+  h1
+    font: 24px "Georgia","Trebuchet MS",Verdana,sans-serif
+
+#main
+  float: right
+  width: 660px
+  background: #fff
+  .inner
+    padding-top: 30px
+
+#sidebar
+  float: left
+  width: 280px
+  margin-right: 20px
+
+#footer
+  clear: both
+
+#title
+  margin: 50px auto
+  text-align: center
+  h1
+    font: normal normal normal 60px / normal Georgia, sans-serif
+    text-shadow: white 0px 1px 0px
+  strong
+    font-weight: normal
+    color: #990015
+
+#sidebar
+  .item
+    margin-bottom: 30px
+  .balloon
+    padding: 15px
+    -moz-border-radius: 7px
+    -webkit-border-radius: 7px
+    border-radius: 7px
+    font: normal normal normal 14px / 150% "Century Gothic", "Lucida Grande", Arial, sans-serif
+    h2
+      font-size: 160%
+      margin-bottom: 15px
+  .tail
+    height: 30px
+    width: 280px
+    overflow: hidden
+  .blue
+    background: #95cbe9
+
+.c0
+  background: #95cbe9
+
+#sidebar .green, .c1
+  background: #afd775
+
+#sidebar .pink, .c2
+  background: #de9d7f
+
+#sidebar .yellow, .c3
+  background: #efd279
+
+#sidebar
+  .white
+    background: #fff
+  .dark
+    background: #333
+    color: white
+  .darkred
+    background: #820012
+    color: white
+  .dark a
+    color: white
+
+#bar .darkred a
+  color: white
+
+.book
+  margin-left: 30px
+  margin-bottom: 30px
+  width: 180px
+  font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif
+  line-height: 150%
+  display: inline-block
+  .cover
+    width: 180px
+    height: 291px
+    margin-bottom: 5px
 
 a
-  &:link, &:visited, &:hover, &:active
-    text-decoration: none
+  color: #1D4F99
+  text-decoration: none
+  &:visited
     color: #1D4F99
+    text-decoration: none
   &:hover
     text-decoration: underline
   &:active
     position: relative
     top: 1px
-  &.underline
-    text-decoration: underline
-
-.page
-  width: 960px
-  margin: 0 auto
-  margin-bottom: 30px
-  overflow: visible
 
 #header
-  a
-    text-decoration: none
-    color: black
-    &:link, &:visited, &:active
-      text-decoration: none
-      color: black
-  .undertitle
-    margin-bottom: 20px
-  h1
-    font: 24px MuseoSlab, Georgia, sans-serif
-    text-align: left
-    margin: 0
-    padding: 0
-    text-shadow: white 0px 1px 0px
-  h2
-    font: 60px Georgia, sans-serif
-    text-align: center
-    margin: 50px 0 60px 0
-    text-shadow: white 0px 1px 0px
-  h3
-    font: 20px Museo, sans-serif
-    font-weight: normal
-    margin: 0
-    margin-bottom: 5px
-    text-shadow: white 0px 1px 0px
-  .top
-    margin-bottom: 10px
-  .title
-    margin: 40px 0
-  img.ipad
+  #logo
+    float: left
+    width: 100px
+  #nav
     float: right
-  .navbar
+    width: 300px
     text-align: right
-    font: 16px Museo, sans-serif
-    text-shadow: white 0px 1px 0px
-
-h2
-  font: 60px Georgia, sans-serif
-  text-align: center
-  margin: 50px 0 60px 0
-  text-shadow: white 0px 1px 0px
+    font: 16px "Lucida Grande","Trebuchet MS",Verdana,sans-serif
 
 #footer
   width: 100%
-  margin-top: 30px
   color: #333
   text-align: center
-
-td
-  &.left
-    width: 300px
-  &.right
-    width: 600px
+  .inner
+    padding: 20px 0px
 
 #sheet
-  background: white
-  width: 660px
-  min-height: 500px
-  padding: 30px 0px
-  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1)
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1)
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1)
-  .inner
-    padding: 0 30px
-  .book
-    width: 180px
-    margin-left: 30px
-    display: inline-block
-    vertical-align: text-top
-    .artists, .cover
-      width: 180px
-      height: 291px
-  .artists
-    background-color: #eee
-    background-image: url('../images/empty.png')
-    .inner
-      padding: 15px
-    h2
-      font: 28px Museo, "Trebuchet MS", Verdana, sans-serif
-      margin: 0
-      font-weight: 300
-      margin-bottom: 20px
-  .book
-    .cover
-      overflow: hidden
-    .info
-      margin-top: 5px
-      margin-bottom: 20px
-      line-height: 160%
   .ipad
     background-image: url('../images/ipad-vertical-empty.png')
     width: 660px
@@ -162,7 +135,7 @@ td
       width: 514px
       height: 685px
   .buy
-    font: 20px Museo, sans-serif
+    font: 20px Museo,sans-serif
     font-weight: normal
     line-height: 100%
     margin: 0
@@ -178,7 +151,7 @@ td
       overflow: hidden
       text-shadow: none
       .search-text
-        font: 14px Helvetica, Arial, sans-serif
+        font: 14px Helvetica,Arial,sans-serif
         position: relative
         top: -16px
   .ipad .screen
@@ -187,96 +160,3 @@ td
     position: absolute
     left: 73px
     top: 80px
-
-#bar
-  width: 280px
-  margin-right: 20px
-  .ipad
-    margin-bottom: 10px
-  .balloon, .links a
-    padding: 10px
-    -moz-border-radius: 7px
-    -webkit-border-radius: 7px
-    border-radius: 7px
-    overflow: hidden
-  .face
-    padding: 0
-    height: 373px
-    overflow: hidden
-  .cover
-    padding: 0
-    height: 452px
-    overflow: hidden
-  .tail
-    margin: 0
-    padding: 0
-    height: 30px
-    overflow: hidden
-  .blue
-    background: #95cbe9
-
-.c0
-  background: #95cbe9
-
-#bar .green, .c1
-  background: #afd775
-
-#bar .pink, .c2
-  background: #de9d7f
-
-#bar .yellow, .c3
-  background: #efd279
-
-#bar
-  .white
-    background: #fff
-  .dark
-    background: #333
-    color: white
-  .darkred
-    background: #820012
-    color: white
-  .dark a, .darkred a
-    color: white
-  h1, h2, h3
-    font: 16px Museo, sans-serif
-    text-align: left
-    margin: 0
-    margin-bottom: 10px
-    text-shadow: none
-  h1.thin
-    font: 16px Museo, sans-serif
-    font-weight: 300
-  h2
-    font-size: 14px
-  h3
-    font: 14px MuseoSans, sans-serif
-  .item
-    margin-bottom: 30px
-  h1 img
-    width: 106px
-  .facebook-like
-    margin-top: 20px
-  .facebookbox
-    width: 258px
-    height: 253px
-    overflow: hidden
-    iframe
-      margin: -1px
-  .links a
-    margin-bottom: 10px
-    display: block
-    font: 18px Museo, sans-serif
-    text-align: center
-    margin-bottom: 10px
-    color: black
-    text-decoration: none
-    &:visited
-      color: black
-      text-decoration: none
-    &:hover
-      background: #555
-      color: #fff
-    &:active
-      background: #fff
-      color: #000

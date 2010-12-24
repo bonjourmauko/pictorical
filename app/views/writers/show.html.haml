@@ -1,0 +1,40 @@
+- content_for :title do
+	= @writer.fullname
+	in Pictorical, illustrated books.
+
+- content_for :meta_description do
+  %meta{:content => "Books by #{@writer.name}. Pictorical publishes the world's greatest stories illustrated by the new generation of artists.", :name => "description"}
+
+- content_for :opengraph do
+	%meta{:content => @writer.fullname, :property => "og:title"}
+	%meta{:content => "author", :property => "og:type"}
+	%meta{:content => "http://www.pictorical.com/artists/#{@writer.to_param}", :property => "og:url"}
+	%meta{:content => @writer.photo280.url, :property => "og:image"}
+	%meta{:content => "Pictorical", :property => "og:site_name"}
+
+- content_for :love do
+  %h1
+    We
+    %strong &#x2766;
+	= @writer.fullname
+
+- content_for :sidebar do
+	.item
+	  .balloon.face{:style => "background: url('#{@writer.photo280.url}');"}
+	  - if !@writer.bio.empty?
+	    .tail.yellow
+			= image_tag "tail-top.png"
+	    .balloon.yellow
+	    	= @writer.bio.html_safe
+	.item
+	  .balloon.white
+	    .like
+		  Do you like
+		  = @writer.last_name
+		  's stories?
+	    = facebooklike( url_for @writer ).html_safe
+
+- content_for :main do
+	- if !@writer.books.nil?
+	  - for @book in @writer.books
+	    = render "shared/covers"

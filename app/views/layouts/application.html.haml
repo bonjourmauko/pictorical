@@ -4,7 +4,7 @@
   %body
     #wrap
       #header= render "/shared/header"
-      = yield :love
-      = yield :sidebar
-      = yield :main
+      #title= yield :love
+      #sidebar= yield :sidebar
+      #main= yield :main
       #footer= render "/shared/footer"

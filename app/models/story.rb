@@ -6,8 +6,8 @@ class Story < ActiveRecord::Base
   belongs_to :artist
   belongs_to :writer
   
-  def to_param
-     "#{self.id}-#{self.title.parameterize}"
-  end
+#  def to_param
+#     "#{self.id}-#{self.title.parameterize}"
+#  end
   
 end
