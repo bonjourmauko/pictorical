@@ -5,16 +5,21 @@
 - content_for :meta_description do
   - !@book.writer.nil? ? @has_writer =  " by #{@book.writer.fullname}" : @has_writer = ""
   %meta{:content => "'#{@book.title}'#{@has_writer}, illustrated by #{@book.artist.fullname}. Pictorical publishes the world's greatest stories illustrated by the new generation of artists.", :name => "description"}  
+  %link{:rel => "canonical", :href => full_url_for(@book) }
+
+  -# Canonical URLs are different for Google than Facebook. Please dont change.
+  -# Canonical URL for Facebook: http://pictorical.com/artists/1
+  -# Canonical URL for Google: http://pictorical.com/artists/1-Frida-Kahlo
 
 - content_for :opengraph do
   %meta{:content => @book.title, :property => "og:title"}
   %meta{:content => "book", :property => "og:type"}
-  %meta{:content => "http://www.pictorical.com/books/#{@book.to_param}",:property => "og:url"}
+  %meta{:content => "http://pictorical.com/books/#{@book.id.to_s}",:property => "og:url"}
   %meta{:content => @book.cover280.url, :property => "og:image"}
   %meta{:content => "Pictorical", :property => "og:site_name"}
 
 - content_for :sidebar do
-  .item
+  .item.booktitle
     .cover
       = image_tag @book.cover280.url
     .tail.white
@@ -31,43 +36,48 @@
           = link_to @book.artist.fullname, @book.artist
         .like
           Do you like this book?
-          = facebooklike( url_for @book ).html_safe
+          %p
+            = facebooklike( '/books/' + @book.id.to_s ).html_safe
         .share
           Share this book with a friend
-          = facebookshare( url_for @book ).html_safe
+          %p
+            = facebookshare( '/books/' + @book.id.to_s ).html_safe
 
-  .item
+  .item.person
     .balloon.face{:style => "background: url('#{@book.artist.photo280.url}');"}
     .tail.white
       = image_tag "tail-top.png"
     .balloon.white
-    %h1
-      = link_to @book.artist.fullname, @book.artist
-    %h2
-      artist
-    .more_stories
-      = link_to "more stories illustrated by #{@book.artist.fullname}", @book.artist
-    .like
-      Do you like
-      = @book.artist.first_name
-      's work?
+      %h1
+        = link_to @book.artist.fullname, @book.artist
+      %h2
+        artist
+      .more_stories
+        = link_to "more stories illustrated by #{@book.artist.fullname}", @book.artist
+      .like
+        Do you like
+        = @book.artist.first_name
+        's work?
+      = facebooklike( '/artists/' + @book.artist.id.to_s ).html_safe
 
   - if @book.writer 
-    .item
+    .item.person
       .balloon.face{:style => "background: url('#{@book.writer.photo280.url}');"}
       .tail.white
         = image_tag "tail-top.png"
       .balloon.white
-      %h1
-        = link_to @book.writer.fullname, @book.writer
-      %h2
-        artist
-      .more_stories
-        = link_to "more stories by #{@book.writer.fullname}", @book.writer
-      .like
-      Do you like
-      = @book.writer.last_name
-      's stories?
+        %h1
+          = link_to @book.writer.fullname, @book.writer
+        %h2
+          writer
+        .more_stories
+          = link_to "more stories by #{@book.writer.fullname}", @book.writer
+        .like
+          Do you like
+          = @book.writer.last_name
+          's stories?
+        = facebooklike( '/writers/' + @book.writer.id.to_s ).html_safe
+        
 
 - content_for :main do
   - @book.gallery.gallery_entries.each do |screenshot|
@@ -75,14 +85,15 @@
       .screen
         = image_tag screenshot.image.url 
 
-  .inner.buy
+  .buy
     To read this story in your iPad or iPhone, search for
+  .buy
     %span.search
       = image_tag("ibooks-search-1.png")
       %span.search-text
         = "#{@book.title} Pictorical"
       = image_tag("ibooks-search-3.png")
-      %span.post_text
-        in the iBookstore
+  .buy  
+    in the iBookstore
   #howto
     = image_tag("book-howto.png")

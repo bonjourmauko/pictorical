@@ -4,11 +4,16 @@
 
 - content_for :meta_description do
   %meta{:content => "Books illustrated by #{@artist.name}. Pictorical publishes the world's greatest stories illustrated by the new generation of artists.", :name => "description"}
+  %link{:rel => "canonical", :href => full_url_for(@artist) }
+
+  -# Canonical URLs are different for Google than Facebook. Please dont change.
+  -# Canonical URL for Facebook: http://pictorical.com/artists/1
+  -# Canonical URL for Google: http://pictorical.com/artists/1-Frida-Kahlo
 
 - content_for :opengraph do
   %meta{:content => @artist.fullname, :property => "og:title"}
   %meta{:content => "author", :property => "og:type"}
-  %meta{:content => "http://www.pictorical.com/artists/#{@artist.to_param}", :property => "og:url"}
+  %meta{:content => "http://pictorical.com/artists/#{@artist.id.to_s}", :property => "og:url"}
   %meta{:content => @artist.photo280.url, :property => "og:image"}
   %meta{:content => "Pictorical", :property => "og:site_name"}
 
@@ -24,16 +29,17 @@
     - if !@artist.bio.empty?
       .tail.yellow
         = image_tag("tail-top.png")
-        .balloon.yellow
-          = @artist.bio.html_safe
-  .item
+      .balloon.yellow
+        = @artist.bio.html_safe
+  .item.person
     .balloon.white
       .like
         Do you like
         = @artist.first_name
         's stories?
-        = facebooklike( url_for @artist ).html_safe
+      = facebooklike( '/artists/' + @artist.id.to_s ).html_safe
 
 - content_for :main do
-  - for @book in @artist.books
-    = render "shared/covers"
+  .inner.white><
+    - for @book in @artist.books
+      = render "shared/covers"

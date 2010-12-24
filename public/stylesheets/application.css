@@ -1,6 +1,6 @@
 body,html {
 background: #eaeaea;
-font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
+font: 12px "Helvetica Neue", "Helvetica", "Century Gothic","Lucida Grande",Arial,sans-serif;
 }
 #wrap {
 width: 960px;
@@ -14,11 +14,13 @@ padding-top: 10px;
 #main {
 float: right;
 width: 660px;
-background: white;
 }
 #main .inner {
 padding-top: 30px;
+
 }
+
+#main .inner.white { background: white; }
 #sidebar {
 float: left;
 width: 280px;
@@ -42,13 +44,32 @@ color: #990015;
 #sidebar .item {
 margin-bottom: 30px;
 }
+
+#sidebar .item.booktitle .cover img { width: 280px; height: 453px;}
+#sidebar .item.booktitle h1 { font-size: 20px; margin-bottom: 10px;}
+#sidebar .item.booktitle h2 { font-size: 16px; margin-bottom: 10px; font-weight: normal;}
+
+#sidebar .item.booktitle .like {margin: 15px 0px; border-top: 1px dashed #999; padding-top: 15px;}
+
+#sidebar .item.booktitle p {margin: 5px 0px;}
+
+#sidebar .item.person h1 { font-size: 20px; margin-bottom: 0px;}
+#sidebar .item.person h2 { font-size: 16px; margin-bottom: 10px; font-weight: normal;}
+
+#sidebar .item.person .more_stories, #sidebar .item.person .like {margin-bottom: 10px}
+
+
 #sidebar .balloon {
 padding: 15px;
 -moz-border-radius: 7px;
 -webkit-border-radius: 7px;
 border-radius: 7px;
-font: 15px "Helvetica Neue", "Helvetica", "Century Gothic","Lucida Grande",Arial,sans-serif;
+font-size: 15px;
 }
+
+#sidebar .balloon.face {width: 280px; height: 375px; background: #aaa;}
+
+
 #sidebar .balloon h2 {
 font-size: 180%;
 margin-bottom: 15px;
@@ -112,6 +133,12 @@ width: 180px;
 height: 291px;
 margin-bottom: 5px;
 }
+
+.book .cover img {
+width: 180px;
+height: 291px;
+}
+
 a {
 color: #1d4f99;
 text-decoration: none;
@@ -169,29 +196,30 @@ text-align: center;
 #footer .inner {
 padding: 20px 0px;
 }
-#sheet .ipad {
+#main .ipad {
 background-image: url("../images/ipad-vertical-empty.png");
 width: 660px;
 height: 844px;
 position: relative;
 margin-bottom: 30px;
 }
-#sheet .ipad .screen img {
+#main .ipad .screen img {
 width: 514px;
 height: 685px;
 }
-#sheet .buy {
-font: 20px Museo,sans-serif;
+#main .buy {
+text-align: center;
+font-size: 20px;
 font-weight: normal;
 line-height: 100%;
 margin: 0;
-margin-bottom: 20px;
+margin-bottom: 10px;
 text-shadow: white 0px 1px 0px;
 }
-#sheet .buy img {
+#main .buy img {
 margin: 0;
 }
-#sheet .buy .search {
+#main .buy .search {
 height: 43px;
 background-image: url("../images/ibooks-search-2.png");
 display: inline-block;
@@ -199,12 +227,12 @@ text-align: left;
 overflow: hidden;
 text-shadow: none;
 }
-#sheet .buy .search .search-text {
+#main .buy .search .search-text {
 font: 14px Helvetica,Arial,sans-serif;
 position: relative;
 top: -16px;
 }
-#sheet .ipad .screen {
+#main .ipad .screen {
 width: 514px;
 height: 684px;
 position: absolute;
@@ -236,3 +264,4 @@ a.twitter:link, a.twitter:hover, a.twitter:visited {color: #132835; text-decorat
 img { border: 0;}
 
 .centered { text-align: center;}
+

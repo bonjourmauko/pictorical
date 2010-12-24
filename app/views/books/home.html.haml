@@ -3,11 +3,13 @@
 
 - content_for :meta_description do
   %meta{:content => "Pictorical publishes the world's greatest stories illustrated by the new generation of artists.", :name => "description"}
+  %link{:rel => "canonical", :href => 'http://pictorical.com' }
+
 
 - content_for :opengraph do
   %meta{:content => "Pictorical", :property => "og:title"}
   %meta{:content => "website", :property => "og:type"}
-  %meta{:content => "http://www.pictorical.com", :property => "og:url"}
+  %meta{:content => "http://pictorical.com", :property => "og:url"}
   %meta{:content => "Pictorical", :property => "og:site_name"}
 
 - content_for :love do
@@ -64,6 +66,7 @@
     = link_to image_tag("Facebook.png", :width => '106'), "http://facebook.com/Pictorical"
 
 - content_for :main do
-  - for @book in @books
-    = render "shared/covers"
-  = will_paginate @books
+  .inner.white><
+    - for @book in @books
+      = render "shared/covers"
+    = will_paginate @books

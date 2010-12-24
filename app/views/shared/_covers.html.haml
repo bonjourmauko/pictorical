@@ -1,4 +1,4 @@
-.book
+.book><
   .cover= link_to ( image_tag @book.cover180.url ), @book
   .title= link_to @book.title, @book
   - if !@book.writer.nil?
@@ -8,4 +8,4 @@
   .artist
     illustrated by
     = link_to @book.artist.fullname, @book.artist
-  .fblike= facebooklike( (url_for @book), 'margin-top: 3px' ).html_safe
+  .fblike= facebooklike( '/books/' + @book.id.to_s  , 'margin-top: 3px' ).html_safe
