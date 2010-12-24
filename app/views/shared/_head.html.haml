@@ -4,6 +4,6 @@
 = render '/shared/meta_keywords'
 = yield :meta_description
 = yield :opengraph # facebook meta
--# javascript_include_tag :defaults # to-do: update rails.js and/or jQuery.js
+= javascript_include_tag :defaults
 = csrf_meta_tag
 = stylesheet_link_tag "application"
