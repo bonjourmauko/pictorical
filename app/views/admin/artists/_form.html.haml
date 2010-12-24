@@ -1,0 +1,21 @@
+- form_for [:admin, @artist] do |f|
+  = render :partial => "/shared/admin/error_messages", :locals => { :object => @artist, :include_object_name => true }
+  .field
+    = f.label :first_name
+    = f.text_field :first_name
+  .field
+    = f.label :last_name
+    = f.text_field :last_name
+  .field
+    = f.label :bio
+    = f.text_area :bio, :rows => 20, :class => 'wymeditor widest'
+  .field
+    = f.label :links
+    = f.text_area :links, :rows => 20, :class => 'wymeditor widest'
+  .field
+    = f.label :photo180
+    = render :partial => "/shared/admin/image_picker", :locals => { :f => f, :field => :photo180_id, :image => @artist.photo180, :toggle_image_display => false }
+  .field
+    = f.label :photo280
+    = render :partial => "/shared/admin/image_picker", :locals => { :f => f, :field => :photo280_id, :image => @artist.photo280, :toggle_image_display => false }
+  = render :partial => "/shared/admin/form_actions", :locals => { :f => f, :continue_editing => false, :delete_title => t('admin.artists.artist.delete'), :delete_confirmation => t('shared.admin.delete.message', :title => @artist.first_name) }

@@ -1,0 +1,19 @@
+= form_for [:admin, @gallery] do |f|
+  = render :partial => "/shared/admin/error_messages", :locals => { :object => @gallery, :include_object_name => true }
+  .field
+    = f.label :name
+    = f.text_field :name
+  = render :partial => "/shared/admin/form_actions", :locals => { :f => f, :continue_editing => false, :delete_title => t('admin.gallery_entries.gallery_entry.delete') }
+- unless @gallery.new_record?
+  %h2 Entries
+  #actions
+    %ul
+      %li
+        = link_to t('admin.gallery_entries.index.create_new'), new_admin_gallery_gallery_entry_url(@gallery), :class => "add_icon"
+  #records
+    - if @gallery.gallery_entries.any?
+      = render :partial => "admin/gallery_entries/sortable_list"
+    - else
+      %p
+        %strong
+          = t('admin.gallery_entries.index.no_items_yet')
