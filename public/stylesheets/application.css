@@ -10,9 +10,7 @@ margin: 0 auto;
 height: 30px;
 padding-top: 10px;
 }
-#header h1 {
-font: 24px "Georgia","Trebuchet MS",Verdana,sans-serif;
-}
+
 #main {
 float: right;
 width: 660px;
@@ -49,12 +47,21 @@ padding: 15px;
 -moz-border-radius: 7px;
 -webkit-border-radius: 7px;
 border-radius: 7px;
-font: normal normal normal 14px/150% "Century Gothic","Lucida Grande",Arial,sans-serif;
+font: 15px "Helvetica Neue", "Helvetica", "Century Gothic","Lucida Grande",Arial,sans-serif;
 }
 #sidebar .balloon h2 {
-font-size: 160%;
+font-size: 180%;
 margin-bottom: 15px;
+font-weight: 300;
+
 }
+
+#sidebar .balloon h3 {
+font-size: 120%;
+margin-bottom: 15px;
+font-weight: 300;
+}
+
 #sidebar .tail {
 height: 30px;
 width: 280px;
@@ -122,14 +129,33 @@ top: 1px;
 }
 #header #logo {
 float: left;
-width: 100px;
+width: 50%;
 }
+#header #logo img, #header #logo iframe {
+	
+	vertical-align: middle;
+	border: 0;
+
+}
+
+#header #logo iframe {
+	
+	position: relative;
+	top: -1px;
+	
+}
+
 #header #nav {
 float: right;
-width: 300px;
+width: 50%;
 text-align: right;
 font: 16px "Lucida Grande","Trebuchet MS",Verdana,sans-serif;
 }
+
+#header #nav a { color: #000; }
+
+#header #nav strong a { color: #C8001C; font-weight: normal;}
+
 #footer {
 width: 100%;
 color: #333333;
@@ -180,3 +206,26 @@ position: absolute;
 left: 73px;
 top: 80px;
 }
+
+#twitter .twitter-sep {
+	border-top: 1px dashed #fff;
+	margin: 10px 0px;
+	
+}
+
+a.twitter:link, a.twitter:hover, a.twitter:visited {color: #132835; text-decoration: none;}
+
+
+#facebook { overflow: hidden; }
+
+#facebook iframe {
+	border:none;
+	overflow:hidden;
+	width:260px;
+	height:232px;
+	background: white;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+
+img { border: 0;}

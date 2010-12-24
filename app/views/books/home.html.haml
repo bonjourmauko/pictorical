@@ -19,6 +19,10 @@
 
 - content_for :sidebar do
   .item
+    .ipad
+      = image_tag "ipad-iphone.png"
+    .tail.dark
+      = image_tag "tail-top.png"
     .balloon.dark
       %h2
         Read stories
@@ -26,40 +30,39 @@
         Support new artists
       %h3
         Buy our ebooks for just $0.99 in the Apple iBookstore.
-        %br
+      %h3
         Artists get half of the profits.
-    .tail.dark
-      = image_tag "tail.png"
-    .ipad
-      = image_tag "ipad-iphone.png"
   .item
     .balloon.darkred
       %h2
         Artists:
-        %br\
+        %br
         Illustrate a story
-      %h2
+      %h3
         Hundreds of stories for all ages to choose from. 
-      %h2
+      %h3
         Get half of the profits, monthly.
-      %h2
+      %h3
         = link_to "Apply now!", "http://artists.pictorical.com" 
   .item
     .balloon.blue
-      #twitter
-        .twitter-line= Twitter.user_timeline("pictorical").first.text
-        .twitter-sep
-        .twitter-line= Twitter.user_timeline("pictorical").second.text
+      %a.twitter{:href="http://twitter.com/Pictorical"}
+        #twitter
+          latest from our Twitter feed:
+          .twitter-sep
+          .twitter-line= Twitter.user_timeline("pictorical").first.text
+          .twitter-sep
+          .twitter-line= Twitter.user_timeline("pictorical").second.text
     .tail.blue
-      = image_tag "tail.png" 
-    = image_tag "Twitter.png", :width => '106'
+      = image_tag ( "tail.png" ), 
+    = link_to ( image_tag ( "Twitter.png", :width => '106'), "htpp://twitter.com/Pictorical" ) 
   .item
     .balloon.white
       #facebook
-        %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://www.facebook.com/plugins/likebox.php?id=127311773973735&amp;width=260&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255", :style => "border:none; overflow:hidden; width:260px; height:232px; background: white;"}
+        %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://www.facebook.com/plugins/likebox.php?id=127311773973735&amp;width=260&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255" }
     .tail.white
       = image_tag "tail.png"  
-    = image_tag "Facebook.png", :width => '106'
+    = link_to ( image_tag ( "Facebook.png", :width => '106'), "htpp://facebook.com/Pictorical" ) 
 
 - content_for :main do
   - for @book in @books do
