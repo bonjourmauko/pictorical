@@ -15,7 +15,10 @@ module ApplicationHelper
     escape_url = CGI::escape url
     '<iframe src="http://www.facebook.com/plugins/like.php?href=' + escape_url + '&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px; margin-bottom: -5px; ' + css + '" allowtransparency="true"></iframe>'
   end
-  
+
+#  def facebook_like(*style)
+#    content_tag :iframe, nil, :style => "border:none; overflow:hidden; width:100px; height:21px; margin-bottom: -5px; #{style.join('; ')}", :src => "http://www.facebook.com/plugins/like.php?href=#{CGI::escape(request.url)}&layout=button_count&show_faces=false&width=100&action=like&colorscheme=light&height=21", :scrolling => 'no', :frameborder => '0', :allowtransparency => true, :id => :facebook_like
+#  end
   
   def facebookpagelike
     url = 'http://facebook.com/Pictorical'
@@ -33,11 +36,8 @@ module ApplicationHelper
     'http://pictorical.com' + url_for(x)
   end
   
-  def tokenizer(first_name, last_name)
-    Digest::MD5.hexdigest("#{first_name.split.first}#{last_name.split.first}".downcase!)
-  end
-  
-  
-  
+#  def tokenizer(first_name, last_name)
+#    Digest::MD5.hexdigest("#{first_name.split.first}#{last_name.split.first}".downcase!)
+#  end
 
 end
