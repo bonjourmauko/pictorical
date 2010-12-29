@@ -36,7 +36,7 @@ module Refinery
     end
 
     # Global Sass Option
-    # Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
+    Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
     
     # JavaScript files you want as :defaults (application.js is always included).
     config.action_view.javascript_expansions[:defaults] = %w(jquery rails)

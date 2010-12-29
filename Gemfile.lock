@@ -4,6 +4,14 @@ GIT
   specs:
     refinerycms-galleries (0.4)
 
+GIT
+  remote: git://github.com/koppen/hassle.git
+  revision: a08c757bce033cebc7ef8a4a3a831127afcb956a
+  specs:
+    hassle (0.0.1)
+      haml
+      rack
+
 PATH
   remote: vendor/engines
   specs:
@@ -170,6 +178,7 @@ DEPENDENCIES
   aws-s3
   compass
   haml-rails
+  hassle!
   heroku_san
   jquery-rails
   mysql2
