@@ -1,0 +1,378 @@
+/* line 1, ../../app/stylesheets/application.sass */
+body, html {
+  background: #eaeaea;
+  font: 12px "Helvetica Neue", "Helvetica", "Century Gothic", "Lucida Grande", Arial, sans-serif;
+}
+
+/* line 5, ../../app/stylesheets/application.sass */
+#wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 9, ../../app/stylesheets/application.sass */
+#header {
+  height: 30px;
+  padding-top: 10px;
+}
+
+/* line 13, ../../app/stylesheets/application.sass */
+#main {
+  float: right;
+  width: 660px;
+}
+/* line 16, ../../app/stylesheets/application.sass */
+#main .inner {
+  padding-top: 30px;
+}
+/* line 18, ../../app/stylesheets/application.sass */
+#main .inner.white {
+  background: white;
+}
+
+/* line 21, ../../app/stylesheets/application.sass */
+#sidebar {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+}
+
+/* line 26, ../../app/stylesheets/application.sass */
+#footer {
+  clear: both;
+}
+
+/* line 29, ../../app/stylesheets/application.sass */
+#title {
+  margin: 50px auto;
+  text-align: center;
+}
+/* line 32, ../../app/stylesheets/application.sass */
+#title h1 {
+  font: normal normal normal 60px/normal Georgia, sans-serif;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 35, ../../app/stylesheets/application.sass */
+#title strong {
+  font-weight: normal;
+  color: #990015;
+}
+
+/* line 40, ../../app/stylesheets/application.sass */
+#sidebar .item {
+  margin-bottom: 30px;
+}
+/* line 43, ../../app/stylesheets/application.sass */
+#sidebar .item.booktitle .cover img {
+  width: 280px;
+  height: 453px;
+}
+/* line 46, ../../app/stylesheets/application.sass */
+#sidebar .item.booktitle h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* line 49, ../../app/stylesheets/application.sass */
+#sidebar .item.booktitle h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+/* line 53, ../../app/stylesheets/application.sass */
+#sidebar .item.booktitle .like {
+  margin: 15px 0px;
+  border-top: 1px dashed #999999;
+  padding-top: 15px;
+}
+/* line 57, ../../app/stylesheets/application.sass */
+#sidebar .item.booktitle p {
+  margin: 5px 0px;
+}
+/* line 60, ../../app/stylesheets/application.sass */
+#sidebar .item.person h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+/* line 63, ../../app/stylesheets/application.sass */
+#sidebar .item.person h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+/* line 67, ../../app/stylesheets/application.sass */
+#sidebar .item.person .more_stories, #sidebar .item.person .like {
+  margin-bottom: 10px;
+}
+/* line 69, ../../app/stylesheets/application.sass */
+#sidebar .balloon {
+  padding: 15px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+/* line 75, ../../app/stylesheets/application.sass */
+#sidebar .balloon.face {
+  width: 280px;
+  height: 375px;
+  background: #aaaaaa;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 81, ../../app/stylesheets/application.sass */
+#sidebar .balloon h2 {
+  font-size: 180%;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+/* line 85, ../../app/stylesheets/application.sass */
+#sidebar .balloon h3 {
+  font-size: 120%;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+/* line 89, ../../app/stylesheets/application.sass */
+#sidebar .tail {
+  height: 30px;
+  width: 280px;
+  overflow: hidden;
+}
+/* line 93, ../../app/stylesheets/application.sass */
+#sidebar .blue {
+  background: #95cbe9;
+}
+
+/* line 96, ../../app/stylesheets/application.sass */
+.c0 {
+  background: #95cbe9;
+}
+
+/* line 99, ../../app/stylesheets/application.sass */
+#sidebar .green, .c1 {
+  background: #afd775;
+}
+
+/* line 102, ../../app/stylesheets/application.sass */
+#sidebar .pink, .c2 {
+  background: #de9d7f;
+}
+
+/* line 105, ../../app/stylesheets/application.sass */
+#sidebar .yellow, .c3 {
+  background: #efd279;
+}
+
+/* line 109, ../../app/stylesheets/application.sass */
+#sidebar .white {
+  background: white;
+}
+/* line 111, ../../app/stylesheets/application.sass */
+#sidebar .dark {
+  background: #333333;
+  color: white;
+}
+/* line 114, ../../app/stylesheets/application.sass */
+#sidebar .darkred {
+  background: #820012;
+  color: white;
+}
+/* line 117, ../../app/stylesheets/application.sass */
+#sidebar .dark a {
+  color: white;
+}
+
+/* line 120, ../../app/stylesheets/application.sass */
+#bar .darkred a {
+  color: white;
+}
+
+/* line 123, ../../app/stylesheets/application.sass */
+.book {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 180px;
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  line-height: 150%;
+  display: inline-block;
+}
+/* line 130, ../../app/stylesheets/application.sass */
+.book .cover {
+  width: 180px;
+  height: 291px;
+  margin-bottom: 5px;
+}
+/* line 134, ../../app/stylesheets/application.sass */
+.book .cover img {
+  width: 180px;
+  height: 291px;
+}
+
+/* line 138, ../../app/stylesheets/application.sass */
+a {
+  color: #1d4f99;
+  text-decoration: none;
+}
+/* line 141, ../../app/stylesheets/application.sass */
+a:visited {
+  color: #1d4f99;
+  text-decoration: none;
+}
+/* line 144, ../../app/stylesheets/application.sass */
+a:hover {
+  text-decoration: underline;
+}
+/* line 146, ../../app/stylesheets/application.sass */
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 151, ../../app/stylesheets/application.sass */
+#header #logo {
+  float: left;
+  width: 50%;
+}
+/* line 154, ../../app/stylesheets/application.sass */
+#header #logo img {
+  vertical-align: middle;
+  border: 0;
+}
+/* line 157, ../../app/stylesheets/application.sass */
+#header #logo iframe {
+  vertical-align: middle;
+  border: 0;
+  position: relative;
+  top: -1px;
+}
+/* line 162, ../../app/stylesheets/application.sass */
+#header #nav {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+/* line 167, ../../app/stylesheets/application.sass */
+#header #nav a {
+  color: black;
+}
+/* line 169, ../../app/stylesheets/application.sass */
+#header #nav strong a {
+  color: #c8001c;
+  font-weight: normal;
+}
+/* line 172, ../../app/stylesheets/application.sass */
+#header #nav strong a:visited {
+  color: #c8001c;
+  font-weight: normal;
+}
+/* line 175, ../../app/stylesheets/application.sass */
+#header #nav strong a:hover {
+  background: #c8001c;
+  color: white;
+  text-decoration: none;
+}
+/* line 179, ../../app/stylesheets/application.sass */
+#header #nav strong a:active {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 184, ../../app/stylesheets/application.sass */
+#footer {
+  width: 100%;
+  color: #333333;
+  text-align: center;
+}
+/* line 188, ../../app/stylesheets/application.sass */
+#footer .inner {
+  padding: 20px 0px;
+}
+
+/* line 192, ../../app/stylesheets/application.sass */
+#main .ipad {
+  background-image: url("../images/ipad-vertical-empty.png");
+  width: 660px;
+  height: 844px;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 198, ../../app/stylesheets/application.sass */
+#main .ipad .screen img {
+  width: 514px;
+  height: 685px;
+}
+/* line 201, ../../app/stylesheets/application.sass */
+#main .buy {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: white 0px 1px 0px;
+}
+/* line 209, ../../app/stylesheets/application.sass */
+#main .buy img {
+  margin: 0;
+}
+/* line 211, ../../app/stylesheets/application.sass */
+#main .buy .search {
+  height: 43px;
+  background-image: url("../images/ibooks-search-2.png");
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  text-shadow: none;
+}
+/* line 218, ../../app/stylesheets/application.sass */
+#main .buy .search .search-text {
+  font: 14px Helvetica, Arial, sans-serif;
+  position: relative;
+  top: -16px;
+}
+/* line 222, ../../app/stylesheets/application.sass */
+#main .ipad .screen {
+  width: 514px;
+  height: 684px;
+  position: absolute;
+  left: 73px;
+  top: 80px;
+}
+
+/* line 229, ../../app/stylesheets/application.sass */
+#twitter .twitter-sep {
+  border-top: 1px dashed white;
+  margin: 10px 0px;
+}
+
+/* line 234, ../../app/stylesheets/application.sass */
+a.twitter:link, a.twitter:hover, a.twitter:visited {
+  color: #132835;
+  text-decoration: none;
+}
+
+/* line 238, ../../app/stylesheets/application.sass */
+#facebook {
+  overflow: hidden;
+}
+/* line 240, ../../app/stylesheets/application.sass */
+#facebook iframe {
+  border: none;
+  overflow: hidden;
+  width: 260px;
+  height: 232px;
+  background: white;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+/* line 249, ../../app/stylesheets/application.sass */
+img {
+  border: 0;
+}
+
+/* line 252, ../../app/stylesheets/application.sass */
+.centered {
+  text-align: center;
+}
