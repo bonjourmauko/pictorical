@@ -55,7 +55,7 @@ gem 'jquery-rails'
 gem 'rails3-generators'
 gem 'twitter'
 #gem 'koala', :git => 'git://github.com/maukoquiroga/koala.git'
-gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
+#gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
 
 group :development do
