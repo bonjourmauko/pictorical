@@ -1,9 +1,9 @@
 class Writer < ActiveRecord::Base
 
   #validations
-  validates :first_name, :presence => true
+  #validates :first_name, :presence => true
   validates :last_name, :presence => true
-  validates :bio, :presence => true
+  #validates :bio, :presence => true
   validates :photo180_id, :presence => true
   validates :photo280_id, :presence => true
   
