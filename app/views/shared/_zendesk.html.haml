@@ -1,0 +1,12 @@
+= javascript_include_tag "//asset0.zendesk.com/external/zenbox/zenbox-2.0.js"
+= stylesheet_link_tag "//asset0.zendesk.com/external/zenbox/zenbox-2.0.css"
+:javascript
+  if (typeof(Zenbox) !== "undefined") {
+    Zenbox.init({
+      dropboxID:   "8025",
+      url:         "pictorical.zendesk.com",
+      tabID:       "questions",
+      tabColor:    "black",
+      tabPosition: "Right"
+    });
+  }
