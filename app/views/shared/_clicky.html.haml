@@ -1,0 +1,7 @@
+- unless refinery_user?
+  = javascript_include_tag "http://static.getclicky.com/js"
+  :javascript
+    try{ clicky.init(parseInt("#{PictoricalSettings.clicky_code}")); }catch(err){}  
+  %noscript
+    %p
+      = image_tag "http://in.getclicky.com/#{PictoricalSettings.clicky_code}ns.gif", :alt => "Clicky", :height => "1", :width => "1"

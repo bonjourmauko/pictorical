@@ -3,10 +3,10 @@
 :javascript
   if (typeof(Zenbox) !== "undefined") {
     Zenbox.init({
-      dropboxID:   "8025",
-      url:         "pictorical.zendesk.com",
-      tabID:       "questions",
-      tabColor:    "black",
-      tabPosition: "Right"
+      dropboxID:   "#{PictoricalSettings.dropbox_id}",
+      url:         "#{PictoricalSettings.url}",
+      tabID:       "#{PictoricalSettings.tab_id}",
+      tabColor:    "#{PictoricalSettings.tab_color}",
+      tabPosition: "#{PictoricalSettings.tab_position}"
     });
   }
