@@ -13,10 +13,10 @@
 - content_for :opengraph do
   %meta{:content => @writer.fullname, :property => "og:title"}
   %meta{:content => "author", :property => "og:type"}
-
-  %meta{:content => "http://pictorical.com/writers/#{@writer.id.to_s}", :property => "og:url"}
+  %meta{:content => "#{request.protocol}#{request.host}/#{@writer.class.name.underscore.humanize.pluralize}//#{@writer.id}", :property => "og:url"}
   %meta{:content => "#{request.protocol}#{request.host}#{@writer.photo280.url}", :property => "og:image"}
-  %meta{:content => "Pictorical", :property => "og:site_name"}
+  %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
+  %meta{:content => "180684778621375", :property => "fb:app_id"}
 
 - content_for :love do
   %h1

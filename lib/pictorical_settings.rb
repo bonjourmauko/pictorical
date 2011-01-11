@@ -37,4 +37,8 @@ module PictoricalSettings
     @settings['clicky_code']
   end
   
+  # Site Name
+  def site_name
+    @settings['site_name']
+  end
 end

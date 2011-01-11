@@ -14,9 +14,10 @@
 - content_for :opengraph do
   %meta{:content => @book.title, :property => "og:title"}
   %meta{:content => "book", :property => "og:type"}
-  %meta{:content => "http://pictorical.com/books/#{@book.id.to_s}",:property => "og:url"}
+  %meta{:content => "#{request.protocol}#{request.host}/#{@book.class.name.underscore.humanize.pluralize}/#{@book.id}", :property => "og:url"}
   %meta{:content => "#{request.protocol}#{request.host}#{@book.cover280.url}", :property => "og:image"}
-  %meta{:content => "Pictorical", :property => "og:site_name"}
+  %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
+  %meta{:content => "180684778621375", :property => "fb:app_id"}
 
 - content_for :sidebar do
   .item.booktitle

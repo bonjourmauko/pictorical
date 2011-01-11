@@ -7,11 +7,12 @@
 
 
 - content_for :opengraph do
-  %meta{:content => "Pictorical", :property => "og:title"}
+  %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:title"}
   %meta{:content => "website", :property => "og:type"}
-  %meta{:content => "http://pictorical.com", :property => "og:url"}
+  %meta{:content => "#{request.protocol}#{request.host}", :property => "og:url"}
   %meta{:content => "#{request.protocol}#{request.host}/images/pictorical-profile-pic.png", :property => "og:image"}
-  %meta{:content => "Pictorical", :property => "og:site_name"}
+  %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
+  %meta{:content => "180684778621375", :property => "fb:app_id"}
 
 - content_for :love do
   %h1
