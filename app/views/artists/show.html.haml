@@ -14,7 +14,7 @@
   %meta{:content => @artist.fullname, :property => "og:title"}
   %meta{:content => "author", :property => "og:type"}
   %meta{:content => "http://pictorical.com/artists/#{@artist.id.to_s}", :property => "og:url"}
-  %meta{:content => @artist.photo280.url, :property => "og:image"}
+  %meta{:content => "#{request.protocol}#{request.host}#{@artist.photo280.url}", :property => "og:image"}
   %meta{:content => "Pictorical", :property => "og:site_name"}
 
 - content_for :love do

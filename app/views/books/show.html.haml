@@ -15,7 +15,7 @@
   %meta{:content => @book.title, :property => "og:title"}
   %meta{:content => "book", :property => "og:type"}
   %meta{:content => "http://pictorical.com/books/#{@book.id.to_s}",:property => "og:url"}
-  %meta{:content => @book.cover280.url, :property => "og:image"}
+  %meta{:content => "#{request.protocol}#{request.host}#{@book.cover280.url}", :property => "og:image"}
   %meta{:content => "Pictorical", :property => "og:site_name"}
 
 - content_for :sidebar do
