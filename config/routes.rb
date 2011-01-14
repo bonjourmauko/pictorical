@@ -1,6 +1,6 @@
 Refinery::Application.routes.draw do
   
-  root :to => 'books#home'
+  root :to => 'books#home', :constraints => {:subdomain => ""}
     
   # REFINERY CMS ================================================================
 
