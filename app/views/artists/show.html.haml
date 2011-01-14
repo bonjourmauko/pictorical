@@ -13,8 +13,8 @@
 - content_for :opengraph do
   %meta{:content => @artist.fullname, :property => "og:title"}
   %meta{:content => "author", :property => "og:type"}
-  %meta{:content => "#{request.protocol}#{request.host}/#{@artist.class.name.underscore.humanize.pluralize}/#{@artist.id}", :property => "og:url"}
-  %meta{:content => "#{request.protocol}#{request.host}#{@artist.photo280.url}", :property => "og:image"}
+  %meta{:content => "http://www.pictorical.com/artists/#{@artist.id}", :property => "og:url"}
+  %meta{:content => "http://www.pictorical.com#{@artist.photo280.url}", :property => "og:image"}
   %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
   %meta{:content => "180684778621375", :property => "fb:app_id"}
 
