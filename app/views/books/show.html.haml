@@ -14,8 +14,8 @@
 - content_for :opengraph do
   %meta{:content => @book.title, :property => "og:title"}
   %meta{:content => "book", :property => "og:type"}
-  %meta{:content => "http://www.pictorical.com/books/#{@book.id}", :property => "og:url"}
-  %meta{:content => "http://www.pictorical.com#{@book.cover280.url}", :property => "og:image"}
+  %meta{:content => "http://pictorical.com/books/#{@book.id}", :property => "og:url"}
+  %meta{:content => "http://pictorical.com#{@book.cover280.url}", :property => "og:image"}
   %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
   %meta{:content => "180684778621375", :property => "fb:app_id"}
 
