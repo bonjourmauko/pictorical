@@ -47,18 +47,18 @@
         Get half of the profits, monthly.
       .centered
         = link_to ( image_tag "button-apply-now.png" ), "http://artists.pictorical.com" 
-  .item
-    .balloon.blue
-      %a.twitter{:href=>"http://twitter.com/Pictorical"}
-        #twitter
-          latest from our Twitter feed:
-          .twitter-sep
+  -#.item
+    -#.balloon.blue
+      -#%a.twitter{:href=>"http://twitter.com/Pictorical"}
+        -##twitter
+          -#latest from our Twitter feed:
+          -#.twitter-sep
           -#.twitter-line= Twitter.user_timeline("pictorical").first.text
-          .twitter-sep
+          -#.twitter-sep
           -#.twitter-line= Twitter.user_timeline("pictorical").second.text
-    .tail.blue
-      = image_tag "tail.png" 
-    = link_to image_tag( "Twitter.png", :width => '106' ), "http://twitter.com/Pictorical" 
+    -#.tail.blue
+      -#= image_tag "tail.png" 
+    -#= link_to image_tag( "Twitter.png", :width => '106' ), "http://twitter.com/Pictorical" 
   .item
     .balloon.white
       #facebook
