@@ -1,10 +1,16 @@
 !!! Strict
 %html{:lang => "en", "xmlns:fb" => "http://www.facebook.com/2008/fbml", "xmlns:og" => "http://opengraphprotocol.org/schema/"}
-  %head= render "/shared/head"
+  %head
+    = render "/shared/head"
   %body
     #wrap
-      #header= render "/shared/header"
-      #title= yield :love
-      #sidebar= yield :sidebar
-      #main= yield :main
-      #footer= render "/shared/footer"
+      #sidebar
+        #header
+          %h1
+            =link_to "Pictorical", "/"
+            = facebookpagelike.html_safe
+        = yield :sidebar
+      #main
+        = yield
+    #footer
+      = render "/shared/footer"
