@@ -29,15 +29,15 @@
       %h2
         by
         = link_to @book.writer.fullname, @book.writer
-      %h2
-        illustrated by
-        = link_to @book.artist.fullname, @book.artist
-      .share
-        Do you like this book?
-        = facebooklike( '/books/' + @book.id.to_s ).html_safe
-      .share
-        Share this book with a friend
-        = facebookshare( '/books/' + @book.id.to_s ).html_safe
+    %h2
+      illustrated by
+      = link_to @book.artist.fullname, @book.artist
+    .share
+      Do you like this book?
+      = facebooklike( '/books/' + @book.id.to_s ).html_safe
+    .share
+      Share this book with a friend
+      = facebookshare( '/books/' + @book.id.to_s ).html_safe
     
     
     
@@ -54,19 +54,20 @@
       = @book.artist.first_name + "'s work?"
       = facebooklike( '/artists/' + @book.artist.id.to_s ).html_safe
 
+  -unless @book.writer.nil?
 
-  .section.bookinfo
-    = image_tag @book.writer.photo280.url, :class => "face"
-    %h1
-      = link_to @book.writer.fullname, @book.writer
-    %h2
-      Writer
-    .share
-      = link_to "More stories by #{@book.writer.fullname}.", @book.writer
-    .share
-      Do you like
-      = @book.writer.last_name + "'s stories?"
-      = facebooklike( '/writers/' + @book.writer.id.to_s ).html_safe
+    .section.bookinfo
+      = image_tag @book.writer.photo280.url, :class => "face"
+      %h1
+        = link_to @book.writer.fullname, @book.writer
+      %h2
+        Writer
+      .share
+        = link_to "More stories by #{@book.writer.fullname}.", @book.writer
+      .share
+        Do you like
+        = @book.writer.last_name + "'s stories?"
+        = facebooklike( '/writers/' + @book.writer.id.to_s ).html_safe
 
         
 - @book.gallery.gallery_entries.each do |screenshot|
