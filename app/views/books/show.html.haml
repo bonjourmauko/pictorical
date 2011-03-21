@@ -29,15 +29,15 @@
       %h2
         by
         = link_to @book.writer.fullname, @book.writer
-      %h2
-        illustrated by
-        = link_to @book.artist.fullname, @book.artist
-      .share
-        Do you like this book?
-        = facebooklike( '/books/' + @book.id.to_s ).html_safe
-      .share
-        Share this book with a friend
-        = facebookshare( '/books/' + @book.id.to_s ).html_safe
+    %h2
+      illustrated by
+      = link_to @book.artist.fullname, @book.artist
+    .share
+      Do you like this book?
+      = facebooklike( '/books/' + @book.id.to_s ).html_safe
+    .share
+      Share this book with a friend
+      = facebookshare( '/books/' + @book.id.to_s ).html_safe
     
     
     
