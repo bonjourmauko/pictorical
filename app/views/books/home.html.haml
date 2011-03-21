@@ -34,13 +34,17 @@
       Support promising artists.
     Buy our eBooks for your iPad from just $0.99 in the Apple iBookstore.
     Artists get half of the profits.
-    
-  .section
+  
+  
+  .section.hidden
     %h2
       %strong
         Artists: Illustrate books with us
-    Be published worldwide, and earn half of the profits.
-    = link_to "Learn more", "http://artists.pictorical.com"
+    %p
+      Be published worldwide and earn half of the profits.
+    %p
+      = link_to "Apply now", "http://artists.pictorical.com", :class => "applynow"
+      it's free and takes 30 seconds
     %p
       Do you have artist friends?
       = link_to "Share the good news", ""
@@ -51,9 +55,35 @@
   .section
     %h2
       About Pictorical
-    Pictorical is a new company that publishes the world's greatest stories, illustrated by artists around the world. We look to enhance the storytelling experience of our readers and give the chance to artists to earn a living doing art.<br>
-    -#= link_to "More.", about_us_path
+    Pictorial publishes the world’s greatest stories illustrated by the world’s most promising artists. Our mission is to enhance the storytelling experience and give artists the rare opportunity to earn a living doing what they love: art.
+    = link_to "More.", about_us_path
         
+  .section
+    %h2
+      How can I buy the books?
+    %p
+      If you have an iPad, you can buy our books by searching for Pictorical in Apple iBookstore.
+    %p
+      Currently the iBookstore is open in the US, UK, Canada, Australia, France and Germany.
+    %p  
+      We are working hard to bring these beautiful illustrated books to more countries and platforms.
+      = link_to "Follow us in Facebook", "http://facebook.com/Pictorical"
+      and we will keep you updated.
+    %p
+      %b
+        More questions answered in our
+        = link_to "Frequently Asked Questions", faq_path, :class => "nobr"
+
+  .section
+    %h2
+      Contact Us
+    %p
+      We want to hear from you. Drop us a line at
+      = mail_to "hello@pictorical.com", "hello@pictorical.com", :encode => "javascript"
+    %p
+      If you want to illustrate books with us, we have a
+      = link_to "special page", "http://artists.pictorical.com", :class => "nobr"
+      for you.
 
 - for @book in @books
   = render "shared/covers"
