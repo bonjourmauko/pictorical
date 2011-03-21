@@ -54,13 +54,9 @@ gem 'compass'
 gem 'jquery-rails'
 gem 'rails3-generators'
 gem 'twitter'
-#gem 'koala', :git => 'git://github.com/maukoquiroga/koala.git'
-#gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
+gem 'hoptoad_notifier'
+gem 'heroku'
 gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://github.com/Vizzuality/refinerycms-galleries.git'
-
-group :development do
-  gem 'heroku_san'
-end
 
 # END USER DEFINED
 
