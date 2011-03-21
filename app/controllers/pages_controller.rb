@@ -15,5 +15,8 @@ class PagesController < ApplicationController
   def legal
   end
   
+  def about_us
+  end
+  
   
 end

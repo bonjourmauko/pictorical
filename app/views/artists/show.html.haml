@@ -18,29 +18,18 @@
   %meta{:content => "#{PictoricalSettings.site_name}", :property => "og:site_name"}
   %meta{:content => "180684778621375", :property => "fb:app_id"}
 
-- content_for :love do
-  %h1
-    We
-    %strong &#x2766;
-    = @artist.fullname
-
 - content_for :sidebar do
-  .item
-    .balloon.face{:style => "background: url('#{@artist.photo280.url}');"}
-    - if !@artist.bio.empty?
-      .tail.yellow
-        = image_tag("tail-top.png")
-      .balloon.yellow
-        = @artist.bio.html_safe
-  .item.person
-    .balloon.white
-      .like
-        Do you like
-        = @artist.first_name
-        's stories?
+
+  .section.bookinfo
+    = image_tag @artist.photo280.url, :class => "face"
+    %h1
+      = @artist.fullname
+    %h2
+      Artist
+    .share
+      Do you like
+      = @artist.first_name + "'s work?"
       = facebooklike( '/artists/' + @artist.id.to_s ).html_safe
 
-- content_for :main do
-  .inner.white><
-    - for @book in @artist.books
-      = render "shared/covers"
+- for @book in @artist.books
+  = render "shared/covers"
