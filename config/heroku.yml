@@ -1,5 +1,0 @@
-apps:
-  # shorthand: heroku app
-  production: pictorical
-  staging: pictorical-staging
-  demo: pictorical-demo
