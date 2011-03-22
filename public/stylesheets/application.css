@@ -98,103 +98,104 @@ h3 {
   color: #999999;
   text-align: center;
   clear: both;
+  padding: 1em;
 }
-/* line 73, ../../app/stylesheets/application.sass */
+/* line 74, ../../app/stylesheets/application.sass */
 #footer a, #footer a:visited {
   color: #666666;
 }
 
-/* line 77, ../../app/stylesheets/application.sass */
+/* line 79, ../../app/stylesheets/application.sass */
 a, a:visited {
   color: #4576b5;
   text-decoration: none;
 }
 
-/* line 81, ../../app/stylesheets/application.sass */
+/* line 83, ../../app/stylesheets/application.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 84, ../../app/stylesheets/application.sass */
+/* line 86, ../../app/stylesheets/application.sass */
 .book {
   display: inline-block;
   margin: 0 2em 2em 0;
   width: 180px;
   vertical-align: top;
 }
-/* line 90, ../../app/stylesheets/application.sass */
+/* line 92, ../../app/stylesheets/application.sass */
 .book .cover img {
   width: 180px;
   height: 291px;
 }
-/* line 93, ../../app/stylesheets/application.sass */
+/* line 95, ../../app/stylesheets/application.sass */
 .book .info {
   margin-top: 0.5em;
 }
-/* line 95, ../../app/stylesheets/application.sass */
+/* line 97, ../../app/stylesheets/application.sass */
 .book .like {
   margin-top: 0.5em;
 }
 
-/* line 98, ../../app/stylesheets/application.sass */
+/* line 100, ../../app/stylesheets/application.sass */
 .section {
   margin-bottom: 2em;
 }
-/* line 100, ../../app/stylesheets/application.sass */
+/* line 102, ../../app/stylesheets/application.sass */
 .section h1 {
   font-size: 2.5em;
 }
-/* line 102, ../../app/stylesheets/application.sass */
+/* line 104, ../../app/stylesheets/application.sass */
 .section p {
   margin-bottom: 0.5em;
 }
 
-/* line 105, ../../app/stylesheets/application.sass */
+/* line 107, ../../app/stylesheets/application.sass */
 .center {
   text-align: center;
 }
 
-/* line 108, ../../app/stylesheets/application.sass */
+/* line 110, ../../app/stylesheets/application.sass */
 .facebook {
   height: 250px;
 }
 
-/* line 113, ../../app/stylesheets/application.sass */
+/* line 115, ../../app/stylesheets/application.sass */
 .ipad280 {
   width: 280px;
   height: 221px;
 }
 
-/* line 118, ../../app/stylesheets/application.sass */
+/* line 120, ../../app/stylesheets/application.sass */
 .ipad660 {
   width: 660px;
   height: 844px;
   background-image: url("http://pictorical.com/images/ipad-vertical-empty.png");
 }
-/* line 122, ../../app/stylesheets/application.sass */
+/* line 124, ../../app/stylesheets/application.sass */
 .ipad660 .inner {
   padding-top: 79px;
   padding-left: 73px;
 }
-/* line 125, ../../app/stylesheets/application.sass */
+/* line 127, ../../app/stylesheets/application.sass */
 .ipad660 img {
   width: 514px;
   height: 685px;
 }
 
-/* line 130, ../../app/stylesheets/application.sass */
+/* line 132, ../../app/stylesheets/application.sass */
 .ipadcontainer {
   margin-bottom: 2em;
 }
 
-/* line 134, ../../app/stylesheets/application.sass */
+/* line 136, ../../app/stylesheets/application.sass */
 .cover280 {
   width: 280px;
   height: 453px;
   background: #444444;
 }
 
-/* line 139, ../../app/stylesheets/application.sass */
+/* line 141, ../../app/stylesheets/application.sass */
 a.applynow {
   display: inline-block;
   color: white;
@@ -202,96 +203,96 @@ a.applynow {
   padding: 0.25em;
 }
 
-/* line 145, ../../app/stylesheets/application.sass */
+/* line 147, ../../app/stylesheets/application.sass */
 .bookinfo {
   margin-bottom: 3em;
 }
-/* line 147, ../../app/stylesheets/application.sass */
+/* line 149, ../../app/stylesheets/application.sass */
 .bookinfo h1 {
   font-size: 2em;
   margin-bottom: 0.3em;
 }
-/* line 150, ../../app/stylesheets/application.sass */
+/* line 152, ../../app/stylesheets/application.sass */
 .bookinfo h2 {
   font-size: 1.5em;
   letter-spacing: -0.1em;
 }
 
-/* line 154, ../../app/stylesheets/application.sass */
+/* line 156, ../../app/stylesheets/application.sass */
 .nobr {
   white-space: nowrap;
 }
 
-/* line 157, ../../app/stylesheets/application.sass */
+/* line 159, ../../app/stylesheets/application.sass */
 .share {
   margin-top: 1em;
 }
 
-/* line 160, ../../app/stylesheets/application.sass */
+/* line 162, ../../app/stylesheets/application.sass */
 .face {
   width: 280px;
   height: 373px;
   background: #987654;
 }
 
-/* line 165, ../../app/stylesheets/application.sass */
+/* line 167, ../../app/stylesheets/application.sass */
 .buy {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-/* line 171, ../../app/stylesheets/application.sass */
+/* line 173, ../../app/stylesheets/application.sass */
 .page h2 {
   font-size: 2em;
   margin: 2em 0;
 }
-/* line 174, ../../app/stylesheets/application.sass */
+/* line 176, ../../app/stylesheets/application.sass */
 .page #wrap {
   width: 600px;
 }
-/* line 176, ../../app/stylesheets/application.sass */
+/* line 178, ../../app/stylesheets/application.sass */
 .page p, .page li {
   margin-bottom: 2em;
 }
-/* line 178, ../../app/stylesheets/application.sass */
+/* line 180, ../../app/stylesheets/application.sass */
 .page li {
   margin-left: 2em;
 }
-/* line 180, ../../app/stylesheets/application.sass */
+/* line 182, ../../app/stylesheets/application.sass */
 .page h3 {
   color: black;
 }
-/* line 182, ../../app/stylesheets/application.sass */
+/* line 184, ../../app/stylesheets/application.sass */
 .page #footer {
   text-align: left;
 }
-/* line 184, ../../app/stylesheets/application.sass */
+/* line 186, ../../app/stylesheets/application.sass */
 .page .serif {
   font-family: "Georgia", Serif;
 }
-/* line 186, ../../app/stylesheets/application.sass */
+/* line 188, ../../app/stylesheets/application.sass */
 .page .serif h3 {
   font-size: 2em;
   letter-spacing: 0px;
   margin-bottom: 1em;
 }
-/* line 190, ../../app/stylesheets/application.sass */
+/* line 192, ../../app/stylesheets/application.sass */
 .page .serif h2 {
   font-size: 4em;
   font-family: "Georgia", Serif;
   letter-spacing: 0px;
 }
-/* line 194, ../../app/stylesheets/application.sass */
+/* line 196, ../../app/stylesheets/application.sass */
 .page .serif h2 .small {
   font-size: 50%;
 }
-/* line 196, ../../app/stylesheets/application.sass */
+/* line 198, ../../app/stylesheets/application.sass */
 .page .serif p {
   font-size: 16px;
 }
 
-/* line 200, ../../app/stylesheets/application.sass */
+/* line 202, ../../app/stylesheets/application.sass */
 #topbar {
   position: absolute;
   top: 0;
@@ -302,7 +303,7 @@ a.applynow {
   -webkit-box-shadow: 0px 0px 10px #666666;
   box-shadow: 0px 0px 10px #666666;
 }
-/* line 211, ../../app/stylesheets/application.sass */
+/* line 213, ../../app/stylesheets/application.sass */
 #topbar .inner {
   padding: 0.5em;
   color: white;
@@ -310,17 +311,17 @@ a.applynow {
   font-size: 1.1em;
   border-bottom: 5px solid white;
 }
-/* line 217, ../../app/stylesheets/application.sass */
+/* line 219, ../../app/stylesheets/application.sass */
 #topbar a, #topbar a:visited {
   color: white;
 }
-/* line 219, ../../app/stylesheets/application.sass */
+/* line 221, ../../app/stylesheets/application.sass */
 #topbar a:hover {
   color: #ffeeaa;
   text-decoration: none;
 }
 
-/* line 224, ../../app/stylesheets/application.sass */
+/* line 226, ../../app/stylesheets/application.sass */
 .hidden {
   display: none;
 }

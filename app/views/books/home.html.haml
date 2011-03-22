@@ -55,8 +55,11 @@
   .section
     %h2
       About Pictorical
-    Pictorial publishes the world’s greatest stories illustrated by the world’s most promising artists. Our mission is to enhance the storytelling experience and give artists the rare opportunity to earn a living doing what they love: art.
-    = link_to "More.", about_us_path
+    %p
+      Pictorial publishes the world’s greatest stories illustrated by the world’s most promising artists. Our mission is to enhance the storytelling experience and give artists the rare opportunity to earn a living doing what they love: art.
+    %p
+      %b
+        = link_to "About Us", about_us_path
         
   .section
     %h2
@@ -71,7 +74,6 @@
       and we will keep you updated.
     %p
       %b
-        More questions answered in our
         = link_to "Frequently Asked Questions", faq_path, :class => "nobr"
 
   .section
