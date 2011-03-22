@@ -302,7 +302,7 @@ a.applynow {
   -webkit-box-shadow: 0px 0px 10px #666666;
   box-shadow: 0px 0px 10px #666666;
 }
-/* line 210, ../../app/stylesheets/application.sass */
+/* line 211, ../../app/stylesheets/application.sass */
 #topbar .inner {
   padding: 0.5em;
   color: white;
@@ -310,16 +310,17 @@ a.applynow {
   font-size: 1.1em;
   border-bottom: 5px solid white;
 }
-/* line 216, ../../app/stylesheets/application.sass */
+/* line 217, ../../app/stylesheets/application.sass */
 #topbar a, #topbar a:visited {
   color: white;
 }
-/* line 218, ../../app/stylesheets/application.sass */
+/* line 219, ../../app/stylesheets/application.sass */
 #topbar a:hover {
-  text-decoration: underline;
+  color: #ffeeaa;
+  text-decoration: none;
 }
 
-/* line 223, ../../app/stylesheets/application.sass */
+/* line 224, ../../app/stylesheets/application.sass */
 .hidden {
   display: none;
 }
