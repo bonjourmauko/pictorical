@@ -8,6 +8,7 @@ Refinery::Application.routes.draw do
   match "/copyright-notice", :to => "pages#copyright_notice", :as => :copyright_notice, :via => :get
   match "/legal", :to => "pages#legal", :as => :legal, :via => :get
   match "/about-us", :to => "pages#about_us", :as => :about_us, :via => :get
+  match "/faq", :to => "pages#faq", :as => :faq, :via => :get
 
   
   # REFINERY CMS ================================================================

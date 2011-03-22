@@ -4,6 +4,7 @@ html, body
 
 body
   margin: 2em
+  margin-top: 5em
   font: 0.75em "Lucida Grande", Tahoma, "Trebuchet MS", Verdana, sans-serif
 
 #sidebar
@@ -74,7 +75,7 @@ h3
 
 
 a, a:visited
-  color: #1D4F99
+  color: #4576B5
   text-decoration: none
 
 a:hover
@@ -98,6 +99,8 @@ a:hover
   margin-bottom: 2em
   h1
     font-size: 2.5em
+  p
+    margin-bottom: 0.5em
 
 .center
   text-align: center
@@ -132,6 +135,12 @@ a:hover
   width: 280px
   height: 453px
   background: #444
+
+a.applynow
+  display: inline-block
+  color: white
+  background: red
+  padding: 0.25em
 	
 .bookinfo
   margin-bottom: 3em
@@ -142,6 +151,8 @@ a:hover
     font-size: 1.5em
     letter-spacing: -0.1em
 
+.nobr
+  white-space: nowrap
 
 .share
   margin-top: 1em
@@ -170,3 +181,44 @@ a:hover
     color: black
   #footer
     text-align: left
+  .serif
+    font-family: "Georgia", Serif
+    h3
+      font-size: 2em
+      letter-spacing: 0px
+      margin-bottom: 1em
+    h2
+      font-size: 4em
+      font-family: "Georgia", Serif
+      letter-spacing: 0px
+      .small
+        font-size: 50%
+    p
+      font-size: 16px
+      
+
+#topbar
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background: #b00
+  -moz-box-shadow: 0px 5px 0px #DDD
+  -webkit-box-shadow: 0px 0px 10px #666
+  box-shadow: 0px 0px 10px #666
+  
+  .inner
+    padding: 0.5em
+    color: #fff
+    text-align: center
+    font-size: 1.1em
+    border-bottom: 5px solid #fff
+  a, a:visited
+    color: white
+  a:hover
+    text-decoration: underline
+  
+  
+  
+.hidden
+  display: none
