@@ -20,6 +20,9 @@ class PagesController < ApplicationController
 
   def faq
   end
+  
+  def press_kit
+  end
 
   
 end

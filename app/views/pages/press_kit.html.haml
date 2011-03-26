@@ -1,0 +1,98 @@
+- content_for :title do
+  Write about Pictorical
+
+.serif
+
+
+  %h2.serif
+    Write about Pictorical
+  .inner
+
+  %p
+    Pictorical is good news for artists, ebook readers and everyone in your audience! We prepared this page to make it easy to write about us. If you have any comments or recommendations, or you need extra information, please
+    = mail_to("hello@pictorical.com", "contact us", :encode => "javascript") + "."
+    We would love to help you.
+    
+  %h3
+    Where to start
+  %p
+    = link_to "About us:", about_us_path
+    Who we are, what we do and what guide us.
+    %br
+    = link_to "Frequently Asked Questions:", faq_path
+    Who illustrate the books, How to get the books, etc.
+    = link_to "Artist application page:", "http://artists.pictorical.com"
+    What's in for artists.
+  %h3
+    Interesting stuff
+  %p
+    %b
+      For artists
+  %p
+    Ebooks are published in Apple iBookstore in
+    %b
+      6 countries from day 1:
+    United States, United Kingdom, Canada, Australia, Germany and France.
+  %p
+    Artists get
+    %b
+      half of the profits
+    from the sales of their books
+  %p
+    Artists can choose which book to illustrate among
+    %b
+      hundreds of classic books
+    by Andersen, Grimm Brothers, Edgar Allan Poe, and many more.
+  %p
+    Artists work with their own style at their own pace.
+    
+  %p
+    %b
+      For readers
+  %p
+    Read great stories and support promising artists: Artists earn half of the profits from each book sold.
+  %p
+    Available in Apple iBookstore for the iPad.
+  %p
+    Readers can connect with their favorite book, author and artists in Facebook.
+  
+  %h3
+    Logo
+  %p
+    = image_tag "LogoSml.png"
+  %p
+    = link_to "Download", image_path("PictoricalLogoTrans.png")
+    a high resolution, transparent PNG version of our current logo.
+  %p
+    We are holding
+    = link_to "a contest in 99 designs", "http://99designs.com/logo-design/contests/logo-pictorical-70778"
+    to design our new logo.
+  %h3
+    Covers
+  %p
+    = image_tag "somecovers.png"
+  %p
+    Download a zip file with 
+    = link_to "our covers in high resolution.", "http://dl.dropbox.com/u/7989419/Pictorical/Press/PictoricalCoversPress.zip"
+  %h3
+    Screenshots
+  %p
+    = image_tag "somescreenshots.png"
+  %p
+    Download a zip file with 
+    = link_to "some screenshots in high resolution.", "http://dl.dropbox.com/u/7989419/Pictorical/Press/PictoricalScreenshotsPress.zip"
+  %h3
+    Insights about the Publishing Industry
+  %p
+    Bain & Company have prepared an excellent overview on the publishing industry:
+    = link_to "Publishing in the digital era", "http://www.bain.com/bainweb/PDFs/cms/Public/BB_Publishing_in_the_digital_era.pdf"
+  %p
+    You can see a graph showing the strong consumer expectations for illustrated books in page 8 of the report.
+  
+  %h3
+    Talk with us
+  %p
+    Victor's Skype username is victorperl and Mauko's is maukoquiroga.
+  %p
+    You can reach us at
+    = mail_to "hello@pictorical.com", "hello@pictorical.com", :encode => "javascript"
