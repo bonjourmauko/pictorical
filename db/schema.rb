@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101224073947) do
+ActiveRecord::Schema.define(:version => 20110328005044) do
 
   create_table "artists", :force => true do |t|
     t.string   "first_name"
@@ -39,6 +39,16 @@ ActiveRecord::Schema.define(:version => 20101224073947) do
   end
 
   add_index "books", ["id"], :name => "index_books_on_id"
+
+  create_table "candidates", :force => true do |t|
+    t.string   "name"
+    t.string   "country"
+    t.string   "email"
+    t.string   "portfolio"
+    t.string   "token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "galleries", :force => true do |t|
     t.string   "name"
