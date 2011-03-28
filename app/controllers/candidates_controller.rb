@@ -7,9 +7,9 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(params[:candidate])
     if @candidate.save
-      render :action => "share"
+      redirect_to share_candidate_path
     else
-      render :action => "new"
+      redirect_to new_candidate_path
     end
   end
   

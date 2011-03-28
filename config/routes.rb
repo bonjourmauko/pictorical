@@ -12,7 +12,7 @@ Refinery::Application.routes.draw do
   match "/press-kit", :to => "pages#press_kit", :as => :press_kit, :via => :get
   
   match "/apply", :to => "candidates#new", :as => :new_candidate, :via => :get
-  match "/apply/share", :to => "candidates#share", :as => :new_candidate_share, :via => :get
+  match "/apply/share", :to => "candidates#share", :as => :share_candidate, :via => :get
   
   
   
