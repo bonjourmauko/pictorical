@@ -1,6 +1,13 @@
-= form_for (candidate, :remote => true, :url => {:controller => "candidates", :action => "create"}) do |f|
+= form_for candidate do |f|
   
-  %ul#error_explanation
+  - if candidate.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(candidate.errors.count, "error")
+        prohibited this text from being saved:
+      %ul
+        - candidate.errors.full_messages.each do |msg|
+          %li= msg
 
   .field
     = f.label :name
