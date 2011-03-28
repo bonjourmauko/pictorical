@@ -93,6 +93,7 @@ a
 .highlighted
   background: #BCFCFF
   line-height: 150%
+  white-space: nowrap
 
 // let's se what the heck is this
 
@@ -118,13 +119,17 @@ div.form
 #fasttrack_field
   display: none
 
-
-input
-  font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif
-  background: #fff
-  border: 0
-  padding: 5px
-  margin: 10px 0
+.field
+  input
+    font: 12px "Lucida Grande","Trebuchet MS",Verdana,sans-serif
+    background: #fff
+    border: 0
+    padding: 5px
+    margin: 10px 0
+    
+.actions
+  margin-top: 1em
+  text-align: center
 
 .input-outer
   background: white
@@ -144,9 +149,6 @@ input
   font-weight: bold
   display: none
 
-input.labelHighlight
-  color: #B0B0B0
-  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif
 
 // already seen?
 
@@ -188,13 +190,15 @@ h1.logo
 
 h1.logo
   float: left
-  font-size: 2.6em
+  font-size: 3em
   font-weight: 700
   letter-spacing: -.08em
   margin: 0
   line-height: 100%
   iframe
     vertical-align: middle
+    position: relative
+    top: -3px
   a, a:visited
     color: black
     text-decoration: none

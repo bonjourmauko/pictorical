@@ -17,6 +17,6 @@
     = f.text_field :email
   .field
     = f.label :portfolio
-    = f.text_field :portfolio
+    = f.text_field :portfolio, :value => "http://"
   .actions
-    = f.submit 'Save'
+    = image_submit_tag "send.png"
