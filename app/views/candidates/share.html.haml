@@ -1,0 +1,36 @@
+.section
+  %h1.big
+    Thanks!
+  %p
+    We will take a look to your portfolio and get back to you if we like your work.
+  .estimated
+    .inner
+      .days
+        4-5 days
+      .desc
+        Estimated waiting time
+      
+    
+  %p
+    Do you want to get a reply sooner? 
+    If you get 3 of your artist friends to send us their portfolios, we will put you on top of the list, and we will have an answer for you in less than one day. 
+  .estimated
+    .inner
+      .days
+        less than 1 day
+      .desc
+        if you bring 3 friends to Pictorical
+
+
+  %p
+    Just share with your friends this address, then we will know you refered them:
+  .token
+    .inner
+      = token_url
+    
+  %p      
+    .social_link.fb
+      = link_to "Share in Facebook", "http://www.facebook.com/sharer.php?u="+url_encode(token_url)+"&t="+url_encode("Pictorical: Illustrate the world's greatest stories, be published worldwide and earn money!")
+    .social_link.tw
+      = link_to "Share in Twitter"
+    

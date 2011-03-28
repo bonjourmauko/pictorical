@@ -7,10 +7,16 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(params[:candidate])
     if @candidate.save
-      redirect_to root_path
+      render :action => "share"
     else
       render :action => "new"
     end
   end
+  
+  def share
+    @token = params[:token]
+  end
+  
+  
 
 end

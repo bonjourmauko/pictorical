@@ -192,17 +192,26 @@ div.form {
   margin: 20px 0px;
 }
 
-/* line 139, ../../app/stylesheets/candidates.sass */
+/* line 140, ../../app/stylesheets/candidates.sass */
+#error_explanation li {
+  padding: 0.25em;
+  font-size: 0.75em;
+  background: red;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+/* line 149, ../../app/stylesheets/candidates.sass */
 #formwrap-conf {
   display: none;
 }
 
-/* line 143, ../../app/stylesheets/candidates.sass */
+/* line 153, ../../app/stylesheets/candidates.sass */
 .email {
   font: 48px BloklettersBalpen, "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 }
 
-/* line 146, ../../app/stylesheets/candidates.sass */
+/* line 156, ../../app/stylesheets/candidates.sass */
 .error {
   color: red;
   font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
@@ -210,7 +219,7 @@ div.form {
   display: none;
 }
 
-/* line 155, ../../app/stylesheets/candidates.sass */
+/* line 165, ../../app/stylesheets/candidates.sass */
 #underform {
   width: 465px;
   margin: 0px auto;
@@ -218,18 +227,18 @@ div.form {
   font-size: 75%;
 }
 
-/* line 162, ../../app/stylesheets/candidates.sass */
+/* line 172, ../../app/stylesheets/candidates.sass */
 #share {
   text-align: left;
   position: relative;
   left: 70px;
 }
-/* line 167, ../../app/stylesheets/candidates.sass */
+/* line 177, ../../app/stylesheets/candidates.sass */
 #share img {
   border: 0;
 }
 
-/* line 170, ../../app/stylesheets/candidates.sass */
+/* line 180, ../../app/stylesheets/candidates.sass */
 #separator {
   font-size: 75%;
   margin-bottom: 10px;
@@ -237,7 +246,7 @@ div.form {
   text-align: center;
 }
 
-/* line 177, ../../app/stylesheets/candidates.sass */
+/* line 187, ../../app/stylesheets/candidates.sass */
 #footer {
   color: #999999;
   text-align: center;
@@ -246,42 +255,97 @@ div.form {
   padding: 10px;
   z-index: 0;
 }
-/* line 182, ../../app/stylesheets/candidates.sass */
+/* line 192, ../../app/stylesheets/candidates.sass */
 #footer a, #footer a:visited {
   color: #666666;
 }
 
-/* line 188, ../../app/stylesheets/candidates.sass */
+/* line 198, ../../app/stylesheets/candidates.sass */
 h1.logo {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 
-/* line 191, ../../app/stylesheets/candidates.sass */
+/* line 201, ../../app/stylesheets/candidates.sass */
 h1.logo {
-  float: left;
+  position: absolute;
   font-size: 3em;
   font-weight: 700;
   letter-spacing: -0.08em;
   margin: 0;
   line-height: 100%;
 }
-/* line 198, ../../app/stylesheets/candidates.sass */
+/* line 208, ../../app/stylesheets/candidates.sass */
 h1.logo iframe {
   vertical-align: middle;
   position: relative;
   top: -3px;
 }
-/* line 202, ../../app/stylesheets/candidates.sass */
+/* line 212, ../../app/stylesheets/candidates.sass */
 h1.logo a, h1.logo a:visited {
   color: black;
   text-decoration: none;
 }
-/* line 205, ../../app/stylesheets/candidates.sass */
+/* line 215, ../../app/stylesheets/candidates.sass */
 h1.logo a:hover {
   color: red;
   text-decoration: none;
 }
-/* line 208, ../../app/stylesheets/candidates.sass */
+/* line 218, ../../app/stylesheets/candidates.sass */
 h1.logo strong {
   color: red;
+  font-weight: bold;
+}
+
+/* line 223, ../../app/stylesheets/candidates.sass */
+.estimated .inner, .token .inner {
+  padding: 0.5em;
+  background: #ffeeaa;
+  margin: 0.75em 0;
+}
+/* line 227, ../../app/stylesheets/candidates.sass */
+.estimated .desc, .token .desc {
+  color: black;
+  font-size: 1em;
+  margin: 0;
+}
+/* line 231, ../../app/stylesheets/candidates.sass */
+.estimated .days, .token .days {
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 237, ../../app/stylesheets/candidates.sass */
+.token .inner {
+  background: #9eea7b;
+  color: #1d6700;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 243, ../../app/stylesheets/candidates.sass */
+.social_link {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+/* line 248, ../../app/stylesheets/candidates.sass */
+.fb {
+  background: #2c4099;
+  color: white;
+}
+/* line 251, ../../app/stylesheets/candidates.sass */
+.fb a:link, .fb a:visited {
+  color: white;
+}
+
+/* line 254, ../../app/stylesheets/candidates.sass */
+.tw {
+  background: #0dc0c3;
+  color: white;
+}
+/* line 257, ../../app/stylesheets/candidates.sass */
+.tw a:link, .tw a:visited {
+  color: white;
 }

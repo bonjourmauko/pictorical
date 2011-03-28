@@ -1,7 +1,8 @@
-= form_for candidate do |f|
+= form_for(candidate) do |f|
   -if candidate.errors.any?
+    %script
+      window.location = window.location.href + "#form";
     #error_explanation
-      %h2= "#{pluralize(candidate.errors.count, "error")} prohibited this candidate from being saved:"
       %ul
         - candidate.errors.full_messages.each do |msg|
           %li= msg
