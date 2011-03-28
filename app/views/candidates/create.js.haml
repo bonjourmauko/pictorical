@@ -1,6 +1,7 @@
 -if @candidate.errors.any?
-  :javascript
-    window.location = window.location.href + "#form";
+  $("#hola").html("ss el medio error")
+
+  window.location = window.location.href + "#form";
   #error_explanation
     %ul
       - @candidate.errors.full_messages.each do |msg|
