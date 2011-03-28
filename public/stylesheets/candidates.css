@@ -1,0 +1,284 @@
+/* line 1, ../../app/stylesheets/candidates.sass */
+body {
+  margin: 2em;
+  font: 0.75em "Lucida Grande", Tahoma, "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* line 5, ../../app/stylesheets/candidates.sass */
+#container, .standard {
+  margin: 0;
+  font: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  line-height: 150%;
+}
+
+/* line 10, ../../app/stylesheets/candidates.sass */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* line 13, ../../app/stylesheets/candidates.sass */
+h1, h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 16, ../../app/stylesheets/candidates.sass */
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -4px;
+  line-height: 90%;
+  margin-bottom: 10px;
+}
+/* line 22, ../../app/stylesheets/candidates.sass */
+h1.big {
+  margin-bottom: 30px;
+}
+
+/* line 25, ../../app/stylesheets/candidates.sass */
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* line 31, ../../app/stylesheets/candidates.sass */
+h3 {
+  font-size: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 35, ../../app/stylesheets/candidates.sass */
+a {
+  text-decoration: none;
+}
+/* line 37, ../../app/stylesheets/candidates.sass */
+a:link, a:visited {
+  color: #4469b4;
+}
+/* line 39, ../../app/stylesheets/candidates.sass */
+a:hover {
+  color: #db6a00;
+}
+/* line 41, ../../app/stylesheets/candidates.sass */
+a:active {
+  color: #db6a00;
+  position: relative;
+  top: 2px;
+}
+
+/* line 46, ../../app/stylesheets/candidates.sass */
+#container {
+  width: 700px;
+  margin: 10px auto;
+  text-align: center;
+  z-index: 100;
+}
+
+/* line 52, ../../app/stylesheets/candidates.sass */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 0;
+}
+/* line 59, ../../app/stylesheets/candidates.sass */
+#header img {
+  border: 0;
+}
+
+/* line 62, ../../app/stylesheets/candidates.sass */
+#social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 0;
+}
+
+/* line 69, ../../app/stylesheets/candidates.sass */
+.section {
+  margin-bottom: 50px;
+}
+
+/* line 72, ../../app/stylesheets/candidates.sass */
+.red {
+  color: #b21100;
+}
+
+/* line 75, ../../app/stylesheets/candidates.sass */
+#benefits {
+  width: 680px;
+  margin: 70px 20px;
+}
+
+/* line 79, ../../app/stylesheets/candidates.sass */
+.box {
+  width: 300px;
+  height: 110px;
+  text-align: left;
+  margin: 20px;
+  float: left;
+}
+/* line 86, ../../app/stylesheets/candidates.sass */
+.box h3 {
+  color: #b21100;
+}
+
+/* line 89, ../../app/stylesheets/candidates.sass */
+#who {
+  font-size: 20px;
+  padding: 30px;
+}
+
+/* line 93, ../../app/stylesheets/candidates.sass */
+.highlighted {
+  background: #bcfcff;
+  line-height: 150%;
+}
+
+/* line 99, ../../app/stylesheets/candidates.sass */
+div.form {
+  width: 465px;
+  margin: 0 auto;
+  background: #ffeeaa;
+  padding: 20px;
+}
+
+/* line 105, ../../app/stylesheets/candidates.sass */
+.form .inner {
+  text-align: left;
+  font: 18px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 111, ../../app/stylesheets/candidates.sass */
+.fasttrack {
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+/* line 114, ../../app/stylesheets/candidates.sass */
+.fasttrack .fasttrack_link {
+  color: #4469b4;
+  cursor: pointer;
+}
+
+/* line 118, ../../app/stylesheets/candidates.sass */
+#fasttrack_field {
+  display: none;
+}
+
+/* line 122, ../../app/stylesheets/candidates.sass */
+input {
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  background: white;
+  border: 0;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+/* line 129, ../../app/stylesheets/candidates.sass */
+.input-outer {
+  background: white;
+  padding: 5px;
+  margin: 20px 0px;
+}
+
+/* line 134, ../../app/stylesheets/candidates.sass */
+#formwrap-conf {
+  display: none;
+}
+
+/* line 138, ../../app/stylesheets/candidates.sass */
+.email {
+  font: 48px BloklettersBalpen, "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* line 141, ../../app/stylesheets/candidates.sass */
+.error {
+  color: red;
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  font-weight: bold;
+  display: none;
+}
+
+/* line 147, ../../app/stylesheets/candidates.sass */
+input.labelHighlight {
+  color: #b0b0b0;
+  font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* line 153, ../../app/stylesheets/candidates.sass */
+#underform {
+  width: 465px;
+  margin: 0px auto;
+  text-align: left;
+  font-size: 75%;
+}
+
+/* line 160, ../../app/stylesheets/candidates.sass */
+#share {
+  text-align: left;
+  position: relative;
+  left: 70px;
+}
+/* line 165, ../../app/stylesheets/candidates.sass */
+#share img {
+  border: 0;
+}
+
+/* line 168, ../../app/stylesheets/candidates.sass */
+#separator {
+  font-size: 75%;
+  margin-bottom: 10px;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+}
+
+/* line 175, ../../app/stylesheets/candidates.sass */
+#footer {
+  color: #999999;
+  text-align: center;
+  clear: both;
+  padding: 1em;
+  padding: 10px;
+  z-index: 0;
+}
+/* line 180, ../../app/stylesheets/candidates.sass */
+#footer a, #footer a:visited {
+  color: #666666;
+}
+
+/* line 186, ../../app/stylesheets/candidates.sass */
+h1.logo {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+/* line 189, ../../app/stylesheets/candidates.sass */
+h1.logo {
+  float: left;
+  font-size: 2.6em;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  margin: 0;
+  line-height: 100%;
+}
+/* line 196, ../../app/stylesheets/candidates.sass */
+h1.logo iframe {
+  vertical-align: middle;
+}
+/* line 198, ../../app/stylesheets/candidates.sass */
+h1.logo a, h1.logo a:visited {
+  color: black;
+  text-decoration: none;
+}
+/* line 201, ../../app/stylesheets/candidates.sass */
+h1.logo a:hover {
+  color: red;
+  text-decoration: none;
+}
+/* line 204, ../../app/stylesheets/candidates.sass */
+h1.logo strong {
+  color: red;
+}

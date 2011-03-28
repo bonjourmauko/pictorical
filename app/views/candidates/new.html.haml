@@ -1,3 +1,76 @@
-%h1 New candidate
+.section
+  = image_tag "pictorical-iphone-ipad-500.png"
+  %h1.big
+    World’s greatest stories
+    %br
+    illustrated by
+    %span.red you
+  %h2
+    You illustrate. We publish. You get half of the profits.
+  #benefits
+    .box
+      %h3
+        Choose from hundreds of stories
+      We have everything from children's stories (Andersen, Grimm, Wilde) to obscure stories (Poe, Lovecraft, Kafka) and everything in between.
+    .box
+      %h3
+        Your work in the Apple iBookstore
+      People with iPads and iPhones will be able to buy your illustrated books in the Apple iBookstore. Worldwide, from the first day.
+    .box
+      %h3
+        Your own style
+      We celebrate diversity, so we will never try to influence your style. We want your illustrations to look like yours, not somebody else's.
+    .box
+      %h3
+        You get half of the profits, monthly
+      We will pay you with Paypal and you can withdraw the money to your bank account, credit card or as a cheque (depending on where you live).
+    .box
+      %h3
+        No deadlines
+      We believe that inspiration can strike anywhere, anytime - you can't force it. With us, you can work whenever you want - at your own pace.
+    .box
+      %h3
+        You are the owner of your artwork
+      Our plain English, artist-friendly agreement allows you to keep the ownership of your work and do whatever you want with it.
+.section
+  %h1
+    Who can join?
+  #who
+    We are looking for talented
+    %span.highlighted professional artists,
+    %span.highlighted 18 years or older,
+    who can produce stunning,
+    %span.highlighted hand-drawn illustrations
+    and have excellent
+    %span.highlighted skills in Photoshop.
+.section
+  %h1
+    Show us your work
+  %h2
+    If we like what we see, we will invite you to join.
+  .form
+    #formwrap.inner
+      = render 'form', :candidate => @candidate
+  #underform
+    We will never sell your email or send you nasty spam.
+    %br
+    Don't have a portfolio yet? Try
+    = link_to "carbonmade", "http://www.carbonmade.com"
+.section
+  %h1
+    Spread the good news
+  %h2
+    Invite your artist friends to join Pictorical.
+  #share
+    = link_to image_tag( "fbshare.jpg" ), "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fartists.pictorical.com&t=Artists:%20Earn%20money%20illustrating%20the%20world's%20greatest%20stories", :target => "_blank"
+    %br
+    %br
+    = link_to image_tag( "twshare.jpg" ), "http://twitter.com/share?url=http%3A%2F%2Fartists.pictorical.com&text=Artists:%20Earn%20money%20illustrating%20the%20world's%20greatest%20stories", :target => "_blank"
+.section
+  %h1
+    Questions?
+  %h2{:style => "margin-top: 20px"}
+    We are happy to help. Write to us at
+    = mail_to "hello@pictorical.com", "hello@pictorical.com", :encode => "javascript"
 
-= render 'form', :candidate => @candidate
+

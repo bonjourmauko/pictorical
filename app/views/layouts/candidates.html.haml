@@ -2,14 +2,13 @@
 %html{:lang => "en", "xmlns:fb" => "http://www.facebook.com/2008/fbml", "xmlns:og" => "http://opengraphprotocol.org/schema/"}
   %head
     = render "/shared/head"
-    = stylesheet_link_tag "application"
-  %body.page
-    = render "/shared/topbar"
-    #wrap
-      #header
-        %h1
-          =link_to "Pictorical", "/"
-          = facebookpagelike.html_safe
+    = stylesheet_link_tag "candidates"
+  %body
+    %h1.logo
+      =link_to "Pictorical", "/"
+      = facebookpagelike.html_safe
+    #container
       = yield
+      = render "social"
     #footer
       = render "/shared/footer"

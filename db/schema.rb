@@ -192,8 +192,36 @@ ActiveRecord::Schema.define(:version => 20110328005044) do
     t.datetime "created_at"
   end
 
-  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "story_screenshots", :force => true do |t|
+    t.string   "title"
+    t.integer  "screenshot1_id"
+    t.integer  "screenshot2_id"
+    t.integer  "screenshot3_id"
+    t.integer  "screenshot4_id"
+    t.integer  "screenshot5_id"
+    t.integer  "screenshot6_id"
+    t.integer  "screenshot7_id"
+    t.integer  "screenshot8_id"
+    t.integer  "screenshot9_id"
+    t.integer  "screenshot10_id"
+    t.integer  "screenshot11_id"
+    t.integer  "screenshot12_id"
+    t.integer  "screenshot13_id"
+    t.integer  "screenshot14_id"
+    t.integer  "screenshot15_id"
+    t.integer  "screenshot16_id"
+    t.integer  "screenshot17_id"
+    t.integer  "screenshot18_id"
+    t.integer  "screenshot19_id"
+    t.integer  "screenshot20_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "story_screenshots", ["id"], :name => "index_story_screenshots_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
