@@ -6,7 +6,8 @@ class Candidate < ActiveRecord::Base
                           :email,
                           :portfolio
                     
-  attr_protected          :token
+  attr_protected          :token,
+                          :referral
   
   validates_presence_of   :portfolio, 
                           :name, 
@@ -17,7 +18,7 @@ class Candidate < ActiveRecord::Base
 
   validates_format_of     :email, 
                           :with =>  /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
-  
+    
   before_create           :assign_token
   
   private
