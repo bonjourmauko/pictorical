@@ -7,14 +7,14 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(params[:candidate])
     if @candidate.save
-      redirect_to share_candidate_path
+      redirect_to share_candidate_path @candidate[:token]
     else
       redirect_to new_candidate_path
     end
   end
   
   def share
-    @token = params[:token]
+    @candidate = Candidate.where(:token => params[:token]).first
   end
   
   
