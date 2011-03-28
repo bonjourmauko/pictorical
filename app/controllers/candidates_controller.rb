@@ -1,5 +1,4 @@
 class CandidatesController < ApplicationController
-  respond_to :html
   
   def new
     @candidate = Candidate.new
@@ -9,6 +8,8 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.new(params[:candidate])
     if @candidate.save
       redirect_to root_path
+    else
+      render :action => "new"
     end
   end
 
