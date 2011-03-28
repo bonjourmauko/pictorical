@@ -1,4 +1,6 @@
 = form_for (candidate, :remote => true, :url => {:controller => "candidates", :action => "create"}) do |f|
+  
+  %ul#error_explanation
 
   .field
     = f.label :name
@@ -12,5 +14,6 @@
   .field
     = f.label :portfolio
     = f.text_field :portfolio, :value => "http://"
+    
   .actions
     = image_submit_tag "send.png"

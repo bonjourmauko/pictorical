@@ -11,8 +11,8 @@ Refinery::Application.routes.draw do
   match "/faq", :to => "pages#faq", :as => :faq, :via => :get
   match "/press-kit", :to => "pages#press_kit", :as => :press_kit, :via => :get
   
-  match "/apply", :to => "candidates#new", :as => :new_candidate, :via => :get
-  match "/apply/:referral", :to => "candidates#new", :as => :new_candidate, :via => :get
+  match "/apply", :to => "candidates#new", :as => :new_candidate, :via => [:get, :post]
+  match "/apply/:referral", :to => "candidates#new", :as => :new_candidate, :via => [:get, :post]
   match "/apply/share/:token", :to => "candidates#share", :as => :share_candidate, :via => :get
   
   resources :candidates, :only => [:create]
