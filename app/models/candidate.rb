@@ -1,5 +1,7 @@
 class Candidate < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
+
+  acts_as_indexed :fields => [:name, :email, :portfolio, :country, :referral, :http_referer]
   
   attr_accessible         :name,
                           :country,
@@ -27,5 +29,5 @@ class Candidate < ActiveRecord::Base
   def assign_token
     self[:token] = truncate(Digest::SHA2.hexdigest(object_id.to_s + ActiveSupport::SecureRandom.hex(50)), :length => 5, :omission => "")
   end
-  
+
 end

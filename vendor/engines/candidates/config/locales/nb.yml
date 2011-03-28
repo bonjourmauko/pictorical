@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    candidates:
+      title: Candidates
+  admin:
+    candidates:
+      index:
+        create_new: Lag en ny Candidate
+        reorder: Endre rekkefølgen på Candidates
+        reorder_done: Ferdig å endre rekkefølgen Candidates
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Candidates enda. Klikk på "Lag en ny Candidate" for å legge til din første candidate.
+      candidate:
+        view_live: Vis hvordan denne candidate ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne candidate
+        delete: Fjern denne candidate permanent
+  candidates:
+    show:
+      other: Andre Candidates

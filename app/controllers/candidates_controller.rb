@@ -1,4 +1,6 @@
 class CandidatesController < ApplicationController
+  before_filter :find_page
+
   respond_to :html, :js, :json
   
   def new
@@ -17,6 +19,8 @@ class CandidatesController < ApplicationController
     @candidate[:referral] = session[:referral]
     @candidate[:http_referer] = session[:http_referer]
     if @candidate.save
+      session[:referral] = nil
+      session[:http_referer] = nil
       session[:candidate] = nil
       redirect_to share_candidate_path @candidate[:token]
     else
@@ -29,4 +33,10 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.where(:token => params[:token]).first
   end
   
+protected
+
+  def find_page
+    @page = Page.find_by_link_url("/candidates")
+  end
+
 end
