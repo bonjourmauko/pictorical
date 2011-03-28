@@ -15,4 +15,12 @@ module CandidatesHelper
     "http://pictorical.com/apply/" + @candidate.token
   end
   
+  def tw_message
+    "Great news: illustrate the world's greatest stories, be published worldwide and earn money! "
+  end
+  
+  def fb_message
+    "Pictorical: Illustrate the world's greatest stories, be published worldwide and earn money! "
+  end
+  
 end

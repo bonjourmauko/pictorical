@@ -23,14 +23,14 @@
 
 
   %p
-    Just share with your friends this address, then we will know you refered them:
+    Just share with your friends this address, then we will know you referred them:
   .token
     .inner
       = token_url
     
   %p      
     .social_link.fb
-      = link_to "Share in Facebook", "http://www.facebook.com/sharer.php?u="+url_encode(token_url)+"&t="+url_encode("Pictorical: Illustrate the world's greatest stories, be published worldwide and earn money!")
+      = link_to "Share in Facebook", "http://www.facebook.com/sharer.php?u=#{url_encode(token_url)}&t=#{url_encode(fb_message)}", :target => "_blank"
     .social_link.tw
-      = link_to "Share in Twitter"
+      = link_to "Share in Twitter", "http://twitter.com/intent/tweet?text=#{url_encode(tw_message)}&url=#{url_encode(token_url)}&via=Pictorical", :target => "_blank"
     
