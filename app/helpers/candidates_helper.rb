@@ -12,7 +12,7 @@ module CandidatesHelper
   end
   
   def token_url
-    "http://pictorical.com/apply/" + @candidate.token
+    "http://pictorical.com/apply/" + @candidate[:token]
   end
   
   def tw_message
