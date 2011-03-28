@@ -1,9 +1,11 @@
 -if @candidate.errors.any?
-  :javascript
-    window.location = window.location.href + "#form";
-  #error_explanation
-    %ul
-      - @candidate.errors.full_messages.each do |msg|
-        %li= msg
+  window.location = window.location.href + "#form"
+   
+- if @artist.errors[:name].any?
+  $("#error_explanation").append("<li>Don't forget to add your name</li>")
+- if @artist.errors[:email].any?
+  $("#error_explanation").append("<li>Please check your email</li>")
+- if @artist.errors[:portfolio].any?
+  $("#error_explanation").append("<li>Please check your portfolio address</li>")
 
 -#= redirect_to share_candidate_path @candidate[:token]

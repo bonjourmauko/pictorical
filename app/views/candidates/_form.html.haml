@@ -1,4 +1,6 @@
 = form_for (candidate, :remote => true, :url => {:controller => "candidates", :action => "create"}) do |f|
+  
+  %ul#error_explanation
 
   .field
     = f.label :name
