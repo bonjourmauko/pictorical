@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110328005044) do
+ActiveRecord::Schema.define(:version => 20110328025010) do
 
   create_table "artists", :force => true do |t|
     t.string   "first_name"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20110328005044) do
     t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "referral"
   end
 
   create_table "galleries", :force => true do |t|
