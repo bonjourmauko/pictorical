@@ -2,14 +2,16 @@ class CandidatesController < ApplicationController
   
   def new
     @candidate = Candidate.new
+    session[:referral] = params[:referral]
   end
 
   def create
     @candidate = Candidate.new(params[:candidate])
+    @candidate[:referral] = session[:referral]
     if @candidate.save
       redirect_to share_candidate_path @candidate[:token]
     else
-      redirect_to new_candidate_path
+      render :action => "new"
     end
   end
   
@@ -17,6 +19,4 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.where(:token => params[:token]).first
   end
   
-  
-
 end
