@@ -1,4 +1,5 @@
 class CandidatesController < ApplicationController
+  respond_to :html, :js
   
   def new
     @candidate = Candidate.new
@@ -8,11 +9,8 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(params[:candidate])
     @candidate[:referral] = session[:referral]
-    if @candidate.save
-      redirect_to share_candidate_path @candidate[:token]
-    else
-      render :action => "new"
-    end
+    @candidate.save
+    #redirect_to share_candidate_path @candidate[:token]
   end
   
   def share
