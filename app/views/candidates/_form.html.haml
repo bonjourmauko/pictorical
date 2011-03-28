@@ -1,11 +1,4 @@
-= form_for(candidate) do |f|
-  -if candidate.errors.any?
-    %script
-      window.location = window.location.href + "#form";
-    #error_explanation
-      %ul
-        - candidate.errors.full_messages.each do |msg|
-          %li= msg
+= form_for (candidate, :remote => true, :url => {:controller => "candidates", :action => "create"}) do |f|
 
   .field
     = f.label :name

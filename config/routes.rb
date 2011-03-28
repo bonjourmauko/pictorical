@@ -15,10 +15,8 @@ Refinery::Application.routes.draw do
   match "/apply/:referral", :to => "candidates#new", :as => :new_candidate, :via => [:get, :post]
   match "/apply/share/:token", :to => "candidates#share", :as => :share_candidate, :via => :get
   
-  
-  
   resources :candidates, :only => [:create]
-
+  
   
   # REFINERY CMS ================================================================
 
