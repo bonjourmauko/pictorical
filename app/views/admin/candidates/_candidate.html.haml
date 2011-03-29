@@ -38,4 +38,9 @@
   .time_ago
     %strong
       = time_ago_in_words(candidate.created_at) + " ago"
+  .accepted
+    - unless candidate[:accepted]
+      = link_to refinery_icon_tag("application_go.png"), accept_candidate_path(candidate[:id]), :target => "_blank"
+      ·
+      = link_to refinery_icon_tag("delete.png"), reject_candidate_path(candidate[:id]), :target => "_blank"
     

@@ -10,7 +10,8 @@ class Candidate < ActiveRecord::Base
 
   attr_protected          :token,
                           :referral,
-                          :http_referer
+                          :http_referer,
+                          :accepted
 
   validates_presence_of   :portfolio,
                           :name,
