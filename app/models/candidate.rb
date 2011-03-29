@@ -23,7 +23,11 @@ class Candidate < ActiveRecord::Base
                           :with =>  /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
 
   before_create           :assign_token
-
+  
+  def has_refered(candidate)
+    Candidate.where(:referral => candidate[:token]).count
+  end
+  
   private
 
   def assign_token
