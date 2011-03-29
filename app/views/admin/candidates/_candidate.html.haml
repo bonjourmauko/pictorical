@@ -8,6 +8,7 @@
     %td= candidate.token
     %td= candidate.referral
     %td= candidate.http_referer
+    %td= link_to refinery_icon_tag("delete.png"), admin_candidate_path(candidate), :'data-confirm' => t('shared.admin.delete.message', :title => candidate.name), :'data-method' => :delete
     
   -#%span.title
     -#= candidate.name
