@@ -1,5 +1,7 @@
 .candidate{:style => "margin-bottom: 1.5em"}
   .info
+    = candidate[:id]
+    ·
     = candidate[:name]
     ·
     = candidate[:country]
@@ -11,12 +13,16 @@
     Token:
     = candidate[:token]
     ·
-    Has refered:
-    = candidate.has_refered candidate
+    %strong 
+      Has refered:
+      = candidate.has_refered candidate
   .referral
     Refered by:
     - if candidate[:referral].nil?
       none
     -else
       = candidate[:referral]
+  .time_ago
+    %strong
+      = time_ago_in_words(candidate.created_at).titleize
     
