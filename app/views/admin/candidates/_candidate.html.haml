@@ -1,10 +1,22 @@
-%tr
-  %td= candidate.id
-  %td= candidate.name
-  %td= candidate.email
-  %td= candidate.country
-  %td= candidate.portfolio
-  %td= candidate.token
-  %td= candidate.referral
-  %td= candidate.http_referer
-  %td= link_to refinery_icon_tag("delete.png"), admin_candidate_path(candidate), :'data-confirm' => t('shared.admin.delete.message', :title => candidate.name), :'data-method' => :delete
+.candidate{:style => "margin-bottom: 1.5em"}
+  .info
+    = candidate[:name]
+    ·
+    = candidate[:country]
+    ·
+    = mail_to candidate[:email], candidate[:email]
+  .url
+    = link_to candidate[:portfolio], candidate[:portfolio]
+  .token
+    Token:
+    = candidate[:token]
+    ·
+    Has refered:
+    -#alguna wea
+  .referral
+    Refered by:
+    - if candidate[:referral].nil?
+      none
+    -else
+      = candidate[:referral]
+    
