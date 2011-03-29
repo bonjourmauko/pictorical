@@ -13,9 +13,15 @@
     Token:
     = candidate[:token]
     ·
-    %strong 
-      Has refered:
-      = candidate.has_refered candidate
+    %strong
+      - has_refered = candidate.has_refered candidate
+      - if has_refered >= 3
+        .red{:style => "color: #c00"}
+          Has refered:
+          = has_refered
+      - else
+        Has refered:
+        = has_refered
   .referral
     Refered by:
     - if candidate[:referral].nil?
