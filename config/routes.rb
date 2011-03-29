@@ -17,6 +17,9 @@ Refinery::Application.routes.draw do
   
   resources :candidates, :only => [:create]
   
+  match "/admin/candidates/:id/accept", :to => "admin/candidates#accept", :as => :accept_candidate
+  match "/admin/candidates/:id/reject", :to => "admin/candidates#reject", :as => :reject_candidate
+  
   
   # REFINERY CMS ================================================================
 
