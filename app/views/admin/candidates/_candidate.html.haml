@@ -1,23 +1,10 @@
-%li{:class => "clearfix record #{cycle("on", "on-hover")}", :id => dom_id(candidate)}
-  %tr
-    %td= candidate.id
-    %td= candidate.name
-    %td= candidate.email
-    %td= candidate.country
-    %td= candidate.portfolio
-    %td= candidate.token
-    %td= candidate.referral
-    %td= candidate.http_referer
-    %td= link_to refinery_icon_tag("delete.png"), admin_candidate_path(candidate), :'data-confirm' => t('shared.admin.delete.message', :title => candidate.name), :'data-method' => :delete
-    
-  -#%span.title
-    -#= candidate.name
-    -#%span.preview &nbsp;
-  -#%span.actions
-    
-    -#= link_to refinery_icon_tag("application_go.png"), candidate_url(candidate), :title => t('.view_live'), :target => "_blank"
-    
-    -#= link_to refinery_icon_tag("application_edit.png"), edit_admin_candidate_path(candidate), :title => t('.edit')
-
-    -#= link_to refinery_icon_tag("delete.png"), admin_candidate_path(candidate), :class => "cancel confirm-delete", :title => t('.delete'), :'data-confirm' => t('shared.admin.delete.message', :title => candidate.name), :'data-method' => :delete
-
+%tr
+  %td= candidate.id
+  %td= candidate.name
+  %td= candidate.email
+  %td= candidate.country
+  %td= candidate.portfolio
+  %td= candidate.token
+  %td= candidate.referral
+  %td= candidate.http_referer
+  %td= link_to refinery_icon_tag("delete.png"), admin_candidate_path(candidate), :'data-confirm' => t('shared.admin.delete.message', :title => candidate.name), :'data-method' => :delete
