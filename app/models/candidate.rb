@@ -24,7 +24,7 @@ class Candidate < ActiveRecord::Base
 
   before_create           :assign_token
   
-  def has_refered(candidate)
+  def has_refered candidate
     Candidate.where(:referral => candidate[:token]).count
   end
   

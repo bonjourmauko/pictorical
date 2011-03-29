@@ -20,8 +20,15 @@
     Refered by:
     - if candidate[:referral].nil?
       none
-    -else
+    - else
       = candidate[:referral]
+    ·
+    Through:
+    - through = through candidate
+    - if through
+      = link_to through, candidate[:http_referer]
+    -else
+      none
   .time_ago
     %strong
       = time_ago_in_words(candidate.created_at) + " ago"
