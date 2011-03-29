@@ -49,6 +49,7 @@ gem 'refinerycms-i18n',         '~> 0.9'
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
+gem 'taps', '0.3.21'
 gem 'haml-rails'
 gem 'compass'
 gem 'jquery-rails'
