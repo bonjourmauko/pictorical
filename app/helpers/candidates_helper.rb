@@ -23,4 +23,12 @@ module CandidatesHelper
     "Pictorical: Illustrate the world's greatest stories, be published worldwide and earn money! "
   end
   
+  def through candidate
+    if candidate[:http_referer] && candidate[:http_referer] != "none"
+      URI.parse(candidate[:http_referer]).host
+    else
+      nil
+    end
+  end
+  
 end
