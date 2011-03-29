@@ -24,5 +24,5 @@
       = candidate[:referral]
   .time_ago
     %strong
-      = time_ago_in_words(candidate.created_at).titleize
+      = time_ago_in_words(candidate.created_at) + " ago"
     
