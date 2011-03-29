@@ -64,3 +64,5 @@ gem 'refinerycms-galleries', '= 0.4', :require => 'galleries', :git => 'git://gi
 gem 'refinerycms-artists', '1.0', :path => 'vendor/engines', :require => 'artists'
 gem 'refinerycms-writers', '1.0', :path => 'vendor/engines', :require => 'writers'
 gem 'refinerycms-books', '1.0', :path => 'vendor/engines', :require => 'books'
+
+gem 'refinerycms-candidates', '1.0', :path => 'vendor/engines', :require => 'candidates'

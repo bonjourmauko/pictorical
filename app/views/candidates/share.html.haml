@@ -1,0 +1,36 @@
+.section
+  %h1.big
+    Thanks!
+  %p
+    We will take a look at your portfolio and get back to you if we like your work.
+  .estimated
+    .inner
+      .days
+        4-5 days
+      .desc
+        Estimated waiting time
+      
+    
+  %p
+    Do you want to get a reply sooner? 
+    Get 3 of your artist friends to send us their portfolios and we will have an answer for you in less than one day.
+  .estimated
+    .inner
+      .days
+        less than 1 day
+      .desc
+        If you bring 3 friends to Pictorial
+
+
+  %p
+    Share this address with your friends and we'll know you referred them:
+  .token
+    .inner
+      = token_url
+    
+  %p      
+    .social_link.fb
+      = link_to "Share in Facebook", "http://www.facebook.com/sharer.php?u=#{url_encode(token_url)}&t=#{url_encode(fb_message)}", :target => "_blank"
+    .social_link.tw
+      = link_to "Share in Twitter", "http://twitter.com/intent/tweet?text=#{url_encode(tw_message)}&url=#{url_encode(token_url)}&via=Pictorical", :target => "_blank"
+    

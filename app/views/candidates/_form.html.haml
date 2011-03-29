@@ -1,0 +1,25 @@
+= form_for candidate do |f|
+  
+  - if candidate.errors.any?
+    :javascript
+        window.location = window.location.href + "#form";
+    #error_explanation
+      %ul
+        - candidate.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :country
+    = country_select("candidate", "country")
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :portfolio
+    = f.text_field :portfolio, :value => "http://"
+    
+  .actions
+    = image_submit_tag "send.png"

@@ -1,0 +1,23 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    candidates:
+      title: Candidates
+  admin:
+    candidates:
+      index:
+        create_new: Create a new Candidate
+        reorder: Reorder Candidates
+        reorder_done: Done Reordering Candidates
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Candidates yet. Click "Create a new Candidate" to add your first candidate.
+      candidate:
+        view_live: View this candidate live <br/><em>(opens in a new window)</em>
+        edit: Edit this candidate
+        delete: Remove this candidate forever
+  candidates:
+    show:
+      other: Other Candidates

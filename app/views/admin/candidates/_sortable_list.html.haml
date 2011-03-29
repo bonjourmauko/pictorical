@@ -1,0 +1,22 @@
+%ul#sortable_list
+  %table
+    %tr
+      %td
+        %strong Id
+      %td
+        %strong Name
+      %td
+        %strong Email
+      %td
+        %strong Country
+      %td
+        %strong Portfolio
+      %td
+        %strong Token
+      %td
+        %strong Referral
+      %td
+        %strong Http Referer
+    = render :partial => 'candidate', :collection => @candidates
+= render :partial => "/shared/admin/sortable_list", :locals => {:continue_reordering => (defined?(continue_reordering) ? continue_reordering : true)}
+

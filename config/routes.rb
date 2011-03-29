@@ -1,5 +1,5 @@
 Refinery::Application.routes.draw do
-  
+
   root :to => 'books#home'
   
   match "/terms-and-conditions", :to => "pages#terms_and_conditions", :as => :terms_and_conditions, :via => :get
@@ -10,7 +10,13 @@ Refinery::Application.routes.draw do
   match "/about-us", :to => "pages#about_us", :as => :about_us, :via => :get
   match "/faq", :to => "pages#faq", :as => :faq, :via => :get
   match "/press-kit", :to => "pages#press_kit", :as => :press_kit, :via => :get
-
+  
+  match "/apply", :to => "candidates#new", :as => :new_candidate, :via => :get
+  match "/apply/:referral", :to => "candidates#new", :as => :new_candidate, :via => :get
+  match "/apply/share/:token", :to => "candidates#share", :as => :share_candidate, :via => :get
+  
+  resources :candidates, :only => [:create]
+  
   
   # REFINERY CMS ================================================================
 
