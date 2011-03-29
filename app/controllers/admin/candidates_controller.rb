@@ -2,7 +2,11 @@ class Admin::CandidatesController < Admin::BaseController
 
   crudify :candidate,
           :title_attribute => 'name'
-
+  
+  def index
+    @candidates = Candidate.sorted.all
+  end
+  
   def accept
     @candidate = Candidate.where(:id => params[:id]).first
     @candidate[:accepted] = "accepted"

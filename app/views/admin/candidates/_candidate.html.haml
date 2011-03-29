@@ -1,45 +1,45 @@
-.candidate{:style => "margin-bottom: 1.5em"}
-  .info
-    = candidate[:id]
-    ·
-    = candidate[:name]
-    ·
-    = candidate[:country]
-    ·
-    = mail_to candidate[:email], candidate[:email]
-  .url
-    = link_to candidate[:portfolio], candidate[:portfolio]
-  .token
-    Token:
-    = candidate[:token]
-    ·
-    %strong
-      - has_refered = candidate.has_refered candidate
-      - if has_refered >= 3
-        %span{:style => "color: #c00"}
+- unless candidate[:accepted]
+  .candidate{:style => "margin-bottom: 1.5em"}
+    .info
+      = candidate[:id]
+      ·
+      = candidate[:name]
+      ·
+      = candidate[:country]
+      ·
+      = mail_to candidate[:email], candidate[:email]
+    .url
+      = link_to candidate[:portfolio], candidate[:portfolio]
+    .token
+      Token:
+      = candidate[:token]
+      ·
+      %strong
+        - has_refered = candidate.has_refered candidate
+        - if has_refered >= 3
+          %span{:style => "color: #c00"}
+            Has refered:
+            = has_refered
+        - else
           Has refered:
           = has_refered
+    .referral
+      Refered by:
+      - if candidate[:referral].nil?
+        none
       - else
-        Has refered:
-        = has_refered
-  .referral
-    Refered by:
-    - if candidate[:referral].nil?
-      none
-    - else
-      = candidate[:referral]
-    ·
-    Through:
-    - through = through candidate
-    - if through
-      = link_to through, candidate[:http_referer]
-    -else
-      none
-  .time_ago
-    %strong
-      = time_ago_in_words(candidate.created_at) + " ago"
-  .accepted
-    - unless candidate[:accepted]
+        = candidate[:referral]
+      ·
+      Through:
+      - through = through candidate
+      - if through
+        = link_to through, candidate[:http_referer]
+      -else
+        none
+    .time_ago
+      %strong
+        = time_ago_in_words(candidate.created_at) + " ago"
+    .accepted
       = link_to refinery_icon_tag("application_go.png"), accept_candidate_path(candidate[:id]), :target => "_blank"
       ·
       = link_to refinery_icon_tag("delete.png"), reject_candidate_path(candidate[:id]), :target => "_blank"
