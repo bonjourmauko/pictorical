@@ -1,5 +1,9 @@
 module CandidatesHelper
   
+  def stumble_tag
+    output = "<script src='http://www.stumbleupon.com/hostedbadge.php?s=5'></script>"
+    output.html_safe
+  end
   
   def facebook_tag
     output = "<script src='http://connect.facebook.net/en_US/all.js#xfbml=1'></script><fb:like href='http://facebook.com/pictorical' layout='box_count' width='50' font='lucida grande'></fb:like>"
