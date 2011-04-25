@@ -61,12 +61,13 @@
     If we like what we see, we will invite you to join.
   .form
     #formwrap.inner
-      = render 'form', :candidate => @candidate
+      = #render 'form', :candidate => @candidate
+      = render 'form_disabled'
   #underform
-    We will never sell your email or send you nasty spam.
-    %br
-    Don't have a portfolio yet? Try
-    = link_to "carbonmade", "http://www.carbonmade.com"
+    - #We will never sell your email or send you nasty spam.
+    - #%br
+    - #Don't have a portfolio yet? Try
+    - #= link_to "carbonmade", "http://www.carbonmade.com"
 .section
   %h1
     Spread the good news
