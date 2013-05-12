@@ -1,0 +1,17 @@
+---
+  
+#Zendesk Settings
+dropbox_id:             asdfasdf
+url:                    asdfasdf
+tab_id:                 asdfasdf
+tab_color:              asdfasdf
+tab_position:           asdfasdf
+
+#Google Analytics Settings
+google_analytics_code:  asdfasdf
+
+#Clicky Settings
+clicky_code:            asdfasdf
+
+#Site Name
+site_name: Pictorical
